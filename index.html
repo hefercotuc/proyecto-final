@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Incluir, Educar, Actuar - Diversidad, Género y Equidad</title>
+  <link rel="icon" href="./img/logo.svg" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="description"
+    content="Sitio educativo sobre multiculturalidad, igualdad de género y equidad social con recursos prácticos y experiencias reales.">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">
+        <img src="./img/logo.svg" alt="Logo" width="28" height="28" />
+        <span>Incluir · Educar · Actuar</span>
+      </div>
+      <nav class="links">
+        <a href="#temas">Temas</a>
+        <a href="#blog">Blog</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#contacto">Contacto</a>
+        <button class="theme-toggle" id="toggle">Modo</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="badges">
+          <span class="badge">Multiculturalidad</span>
+          <span class="badge">Género</span>
+          <span class="badge">Equidad</span>
+        </div>
+        <h1>Explora, aprende y <span style="color:var(--color-accent)">actúa</span> por un mundo más justo</h1>
+        <p>Un espacio para comprender la diversidad cultural, promover la igualdad de género y construir entornos más
+          equitativos.</p>
+        <div class="cta">
+          <a href="#temas"><button class="btn btn-primary">Comienza tu viaje</button></a>
+          <a href="#recursos"><button class="btn btn-ghost">Recursos gratuitos</button></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="./img/cover_image.jpg" alt="Ilustración que representa diversidad e inclusión" />
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="temas" class="section">
+      <div class="container">
+        <h2>5 temas para entender y transformar</h2>
+        <p class="lead">Selecciona un tema para explorar recursos, historias y acciones concretas.</p>
+        <div class="grid grid-5">
+          <!-- Diversidad Cultural y Migración -->
+          <article class="card" data-modal="modal1">
+            <div class="icon"><img src="./img/globo.svg" alt="Globo" /></div>
+            <h3>Diversidad Cultural y Migración</h3>
+            <p>Historias de migrantes, costumbres y el impacto de la migración en la identidad cultural.</p>
+            <a href="#" class="card-link">Descubrir →</a>
+          </article>
+          <!-- Igualdad de Género y Derechos Humanos -->
+          <article class="card" data-modal="modal2">
+            <div class="icon"><img src="./img/genero.svg" alt="Género" /></div>
+            <h3>Igualdad de Género y Derechos Humanos</h3>
+            <p>Movimientos feministas, derechos LGBTQ+ y la importancia del lenguaje inclusivo.</p>
+            <a href="#" class="card-link">Informarme →</a>
+          </article>
+          <!-- Equidad Social y Justicia -->
+          <article class="card" data-modal="modal3">
+            <div class="icon"><img src="./img/balanza.svg" alt="Equidad" /></div>
+            <h3>Equidad Social y Justicia</h3>
+            <p>Políticas públicas, acceso a educación y salud para grupos vulnerables.</p>
+            <a href="#" class="card-link">Explorar →</a>
+          </article>
+          <!-- Interseccionalidad -->
+          <article class="card" data-modal="modal4">
+            <div class="icon"><img src="./img/interseccion.svg" alt="Intersección" /></div>
+            <h3>Interseccionalidad</h3>
+            <p>Cómo se cruzan género, raza, clase y cultura en la experiencia humana.</p>
+            <a href="#" class="card-link">Aprender →</a>
+          </article>
+          <!-- Acción y Participación Ciudadana -->
+          <article class="card" data-modal="modal5">
+            <div class="icon"><img src="./img/megafono.svg" alt="Megáfono" /></div>
+            <h3>Acción y Participación Ciudadana</h3>
+            <p>Herramientas para activismo digital y cómo involucrarse en proyectos comunitarios.</p>
+            <a href="#" class="card-link">Actuar →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section">
+      <div class="container">
+        <h2>Blog y noticias</h2>
+        <p class="lead">Análisis, opinión y novedades sobre diversidad, género y equidad.</p>
+        <div class="posts">
+          <article class="post">
+            <div class="post-image" style="background:linear-gradient(135deg, #4F46E5, #14B8A6)"></div>
+            <div class="content">
+              <span class="tag">Interseccionalidad</span>
+              <h4>Lenguaje inclusivo: más que palabras, una práctica cotidiana</h4>
+              <p>Guía rápida con ejemplos para hablar y escribir de forma inclusiva sin perder claridad.</p>
+            </div>
+          </article>
+          <div class="grid" style="grid-template-columns:1fr; gap:18px">
+            <article class="post">
+              <div class="post-image" style="background:linear-gradient(135deg, #F97316, #EAB308)"></div>
+              <div class="content">
+                <span class="tag">Equidad</span>
+                <h4>Cerrar brechas: políticas que sí funcionan</h4>
+                <p>Casos reales de empresas e instituciones que lograron resultados medibles.</p>
+              </div>
+            </article>
+            <article class="post">
+              <div class="post-image" style="background:linear-gradient(135deg, #8B5CF6, #EC4899)"></div>
+              <div class="content">
+                <span class="tag">Multiculturalidad</span>
+                <h4>Tradiciones que nos unen</h4>
+                <p>Cómo celebrar la diversidad fortalece comunidades y organizaciones.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="section">
+      <div class="container">
+        <h2>Recursos</h2>
+        <p class="lead"></p>
+        <div class="resources">
+          <div class="resource">
+            <button class="btn btn-ghost" style="margin-top:10px"></button>
+          </div>
+          <div class="resource">
+            <button class="btn btn-ghost" style="margin-top:10px"></button>
+          </div>
+          <div class="resource">
+            <button class="btn btn-ghost" style="margin-top:10px"></button>
+          </div>
+          <div class="resource">
+            <button class="btn btn-ghost" style="margin-top:10px"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container" id="contacto-container">
+        <h2>¿Tienes dudas o quieres colaborar?</h2>
+        <p class="lead">
+          Si te gustaría hacer un aporte, sugerir un nuevo apartado o 
+          simplemente quieres charlar sobre el proyecto, ¡envíanos un WhatsApp!
+        </p>
+        
+        <a 
+          href="https://api.whatsapp.com/send?phone=50256181575&text=%C2%A1Hola%20👋!%20Me%20gustar%C3%ADa%20hacer%20un%20aporte%20o%20sugerir%20agregar%20un%20apartado%20al%20sitio%20💡." 
+          class="btn btn-primary cta-whatsapp" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ventanas modales para cada tema -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Diversidad Cultural y Migración</h2>
+      <div class="modal-body">
+        <h3>Historias de migrantes, costumbres y tradiciones</h3>
+        <p>La Guerra Civil en Guatemala a principios de los años 80 provocó que miles de guatemaltecos huyeran del país.
+          A
+          partir de 1981 inició el arribo masivo de refugiados guatemaltecos a México. Se estima que alrededor de 46,000
+          guatemaltecos se refugiaron en distintos asentamientos en el estado de Chiapas.</p>
+
+        <h3>Impacto de la migración en la identidad cultural</h3>
+        <p>"Hoy en día lo que vemos son personas que ya son naturalizadas como mexicanas, obviamente también ya hay una
+          segunda y tercera generación que nació aquí e inclusive, lo que en su momento eran los asentamientos, ya son
+          poblados mexicanos totalmente incorporados dentro de la estructura política, económica, administrativa también
+          del Estado y de los municipios", expresa Adelina, una refugiada guatemalteca.</p>
+
+        <h3>Recursos para integración intercultural</h3>
+        <p>El fondo de apoyo recuperable creado por ACNUR permitió también que se financiara a los agricultores con
+          créditos para producir las tierras. "Comenzamos a producir ocra para su exportación; en el caso de Kesté la
+          exportación de sandía hacia Estados Unidos fue grande. Hoy no sé si siguen funcionando las unidades de riego,
+          pero en su momento fueron un factor importantísimo para el desarrollo y despegue de este poblado", agrega
+          Marlen.</p>
+
+        <div class="modal-actions">
+          <button class="btn btn-primary"></button>
+          <button class="btn btn-ghost"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Igualdad de Género y Derechos Humanos</h2>
+      <div class="modal-body">
+        <h3>Movimientos feministas y derechos LGBTQ+</h3>
+        <p>La igualdad de género figura en lugar prominente entre los principios de derechos humanos y los valores de
+          las
+          Naciones Unidas. Sin embargo, en el mundo entero millones de mujeres y miembros del colectivo LGBTI siguen
+          padeciendo discriminación en lo tocante al disfrute de sus derechos civiles, culturales, económicos, políticos
+          y
+          sociales.</p>
+
+        <h3>Brecha salarial y políticas inclusivas</h3>
+        <p>En Guatemala, a nivel nacional el salario promedio que reciben las mujeres es alrededor del 26% menos que el
+          percibido por los hombres. En el caso de la población indígena sus ingresos salariales son, en promedio,
+          menores
+          en un 38% respecto a los de la población no indígena.</p>
+
+        <h3>Lenguaje inclusivo y su importancia</h3>
+        <p>El lenguaje es poderoso, dinámico, y define la forma en la que vemos el mundo. Identificarnos en nuestros
+          propios términos, con los pronombres que elegimos y ser reconocidos con palabras inclusivas forma parte de la
+          democratización del lenguaje y del orgullo de ser quienes somos.</p>
+
+        <h4>Pronombres y autoidentificación</h4>
+        <p>Para personas parte de la comunidad LGBTQ+, como personas transgénero o con identidades no binarias, el
+          lenguaje es clave para su autoidentificación y su inclusión en la sociedad. En varios países de América
+          Latina,
+          como Argentina y Chile, organizaciones impulsan el uso de la letra "e", como "elle" en lugar de él o ella,
+          para
+          marcar la neutralidad gramática.</p>
+
+        <div class="modal-actions">
+          <button class="btn btn-primary"></button>
+          <button class="btn btn-ghost"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Equidad Social y Justicia</h2>
+        <div class="modal-body">
+          <h3>Políticas públicas para reducir desigualdades</h3>
+          
+          <h4>1. Transferencias monetarias condicionadas (TMC)</h4>
+          <p>Objetivo: aumentar ingreso (alivio inmediato) y promover inversión en capital humano (educación y salud) mediante condiciones. Efectos observados: reducción de pobreza de corto plazo, aumento en asistencia escolar y cumplimiento de controles salud.</p>
+          
+          <h4>2. Protección social integrada / sistemas de primera infancia</h4>
+          <p>Políticas intersectoriales que combinan salud prenatal, seguimiento del desarrollo infantil, apoyo a la parentalidad y acceso a servicios de cuidado temprano. Estas intervenciones en la primera infancia generan alta rentabilidad social y reducen brechas futuras en desarrollo humano.</p>
+          
+          <h4>3. Cobertura sanitaria universal</h4>
+          <p>Ampliar atención primaria y redes comunitarias mejora acceso de poblaciones remotas, reduce mortalidad infantil y enfermedades prevenibles.</p>
+          
+          <h3>Acceso a educación y salud para grupos vulnerables</h3>
+          
+          <h4>Estrategias educativas:</h4>
+          <ul>
+            <li>Transferencias condicionadas ligadas a escolaridad</li>
+            <li>Alimentación escolar y programas de nutrición</li>
+            <li>Becas focalizadas + mentoría</li>
+            <li>Educación inclusiva con materiales en lenguas locales</li>
+          </ul>
+          
+          <h4>Estrategias de salud:</h4>
+          <ul>
+            <li>Expansión de atención primaria y trabajadores comunitarios</li>
+            <li>Vinculación entre transferencias y controles de salud</li>
+            <li>Servicios móviles / telemedicina en zonas rurales</li>
+          </ul>
+          
+          <h3>Casos de éxito</h3>
+          <p><strong>Bolsa Família (Brasil):</strong> TMC nacional que redujo pobreza e inequidades; estudios muestran que entre 2004-2019 el programa evitó cientos de miles de muertes y millones de hospitalizaciones entre la población más pobre.</p>
+          
+          <p><strong>Progresa / Oportunidades / Prospera (México):</strong> Primer programa nacional de TMC con evaluación experimental, con mejoras en asistencia escolar, salud infantil y movilidad intergeneracional.</p>
+          
+          <div class="modal-actions">
+            <button class="btn btn-primary">Ver casos completos</button>
+            <button class="btn btn-ghost">Compartir</button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+  <!--<div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Interseccionalidad</h2>
+        <div class="modal-body">
+          <h3>Cómo se cruzan género, raza, clase y cultura</h3>
+          <p>La <strong>interseccionalidad</strong> es un concepto que explica cómo diferentes formas de desigualdad o discriminación pueden combinarse y afectar simultáneamente a una persona. Fue introducido por la académica <strong>Kimberlé Crenshaw</strong> en 1989 para mostrar que las mujeres afroamericanas sufrían discriminación no solo por su género, sino también por su raza.</p>
+          
+          <p>En el contexto guatemalteco y latinoamericano, la interseccionalidad se manifiesta cuando una persona enfrenta exclusión por <strong>múltiples factores</strong>: por ejemplo, ser mujer, indígena y de bajos recursos económicos. Esto implica que su realidad no puede entenderse desde una sola categoría, sino desde la combinación de varias.</p>
+          
+          <h3>Desafíos y oportunidades en la inclusión</h3>
+          <p>Uno de los principales <strong>desafíos</strong> es que las políticas públicas suelen centrarse en un solo tipo de desigualdad (por ejemplo, solo en género o solo en pobreza), dejando fuera las experiencias de quienes viven múltiples formas de exclusión.</p>
+          
+          <p>Por ejemplo, una mujer indígena del área rural puede tener menos acceso a la educación que una mujer urbana no indígena, debido a las <strong>barreras lingüísticas, culturales y económicas</strong>.</p>
+          
+          <p>Sin embargo, la interseccionalidad también abre <strong>oportunidades para la inclusión</strong>, ya que permite diseñar <strong>estrategias más justas y efectivas</strong>, reconociendo la diversidad de las personas.</p>
+          
+          <h3>Historias reales que muestran estas intersecciones</h3>
+          <p>Un ejemplo claro en Guatemala son las <strong>mujeres indígenas defensoras del territorio</strong>, quienes enfrentan triple discriminación: por ser mujeres, por pertenecer a un pueblo originario y por resistir a proyectos extractivos. A pesar de estas dificultades, han logrado organizarse para defender sus derechos y promover el liderazgo femenino dentro de sus comunidades.</p>
+          
+          <p>Otro caso es el de jóvenes de la comunidad <strong>LGBTQ+ indígena</strong>, que además de luchar por el reconocimiento de su identidad sexual, enfrentan rechazo dentro de sus propias comunidades y barreras sociales externas.</p>
+          
+          <div class="modal-actions">
+            <button class="btn btn-primary">Ver más historias</button>
+            <button class="btn btn-ghost">Compartir</button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+  <!--<div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Acción y Participación Ciudadana</h2>
+        <div class="modal-body">
+          <h3>Herramientas para activismo digital</h3>
+          <p>En la era digital, existen múltiples herramientas que facilitan la participación ciudadana y el activismo:</p>
+          <ul>
+            <li><strong>Plataformas de peticiones en línea</strong> como Change.org o Avaaz</li>
+            <li><strong>Redes sociales</strong> para crear conciencia y movilizar apoyos</li>
+            <li><strong>Herramientas de organización</strong> como Trello, Slack o Asana para coordinar acciones</li>
+            <li><strong>Recursos de comunicación</strong> para crear contenido visual atractivo</li>
+          </ul>
+          
+          <h3>Campañas globales y locales</h3>
+          <p>Las campañas efectivas suelen combinar elementos globales con acciones locales concretas. Algunas estrategias exitosas incluyen:</p>
+          <ul>
+            <li>Identificar claramente el problema y la solución propuesta</li>
+            <li>Establecer metas realistas y medibles</li>
+            <li>Crear mensajes claros y emocionalmente resonantes</li>
+            <li>Utilizar múltiples canales de comunicación</li>
+            <li>Involucrar a personas afectadas directamente en el liderazgo</li>
+          </ul>
+          
+          <h3>Cómo involucrarse en proyectos comunitarios</h3>
+          <p>La participación comunitaria es fundamental para generar cambios sostenibles. Algunas formas de involucrarse:</p>
+          <ul>
+            <li><strong>Voluntariado en organizaciones locales</strong> que trabajen por la equidad</li>
+            <li><strong>Participación en consejos comunitarios</strong> o espacios de toma de decisiones</li>
+            <li><strong>Organización de eventos educativos</strong> sobre temas de diversidad e inclusión</li>
+            <li><strong>Apoyo a negocios locales</strong> que promuevan prácticas equitativas</li>
+            <li><strong>Colaboración en proyectos de investigación</strong> sobre temas sociales</li>
+          </ul>
+          
+          <div class="modal-actions">
+            <button class="btn btn-primary">Descargar guía de activismo</button>
+            <button class="btn btn-ghost">Ver oportunidades de voluntariado</button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+  <footer class="footer">
+    <div class="container"
+      style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap">
+      <small>© 2025 Inclusión & Equidad. Todos los derechos reservados.</small>
+      <small>Hecho con empatía, datos y buenas prácticas.</small>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
