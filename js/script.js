@@ -79,4 +79,71 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // --- 3. NAVEGACIÓN ENTRE MODALES (MODAL3 Y RECOMENDACIONES) ---
+
+  // Abrir modal de recomendaciones desde modal principal
+  const openRecommendationsBtn = document.getElementById('open-recommendations');
+  if (openRecommendationsBtn) {
+    openRecommendationsBtn.addEventListener('click', function() {
+      // Cerrar modal principal
+      const modal3 = document.getElementById('modal3');
+      if (modal3) {
+        modal3.style.display = 'none';
+      }
+      
+      // Abrir modal de recomendaciones
+      const recommendationsModal = document.getElementById('modal3-recommendations');
+      if (recommendationsModal) {
+        recommendationsModal.style.display = 'block';
+      }
+    });
+  }
+
+  // Volver al modal principal desde el botón superior de recomendaciones
+  const backToMainBtn = document.getElementById('back-to-main');
+  if (backToMainBtn) {
+    backToMainBtn.addEventListener('click', function() {
+      // Cerrar modal de recomendaciones
+      const recommendationsModal = document.getElementById('modal3-recommendations');
+      if (recommendationsModal) {
+        recommendationsModal.style.display = 'none';
+      }
+      
+      // Abrir modal principal
+      const modal3 = document.getElementById('modal3');
+      if (modal3) {
+        modal3.style.display = 'block';
+      }
+    });
+  }
+
+  // Volver al modal principal desde el botón inferior de recomendaciones
+  const backToMainBottomBtn = document.getElementById('back-to-main-bottom');
+  if (backToMainBottomBtn) {
+    backToMainBottomBtn.addEventListener('click', function() {
+      // Cerrar modal de recomendaciones
+      const recommendationsModal = document.getElementById('modal3-recommendations');
+      if (recommendationsModal) {
+        recommendationsModal.style.display = 'none';
+      }
+      
+      // Abrir modal principal
+      const modal3 = document.getElementById('modal3');
+      if (modal3) {
+        modal3.style.display = 'block';
+      }
+    });
+  }
+
+  // Cerrar modal de recomendaciones con la X específica
+  const closeRecommendations = document.querySelector('.close-recommendations');
+  if (closeRecommendations) {
+    closeRecommendations.addEventListener('click', function() {
+      const recommendationsModal = document.getElementById('modal3-recommendations');
+      if (recommendationsModal) {
+        recommendationsModal.style.display = 'none';
+      }
+    });
+  }
+
 });

@@ -213,3 +213,147 @@ body{
 .cta-whatsapp .fa-whatsapp {
   margin-right: 8px;
 }
+
+/* Estilos para imágenes en modales */
+.modal-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.modal-image {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.modal-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.modal-image:hover img {
+  transform: scale(1.05);
+}
+
+.image-caption {
+  padding: 8px 12px;
+  background: var(--color-elevated);
+  font-size: 14px;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+/* Estilos para tablas de contenido */
+.table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.content-table th {
+  background: color-mix(in oklab, var(--color-primary) 15%, var(--color-surface));
+  color: var(--color-text);
+  font-weight: 700;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.content-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.content-table tr:last-child td {
+  border-bottom: none;
+}
+
+.content-table tr:hover {
+  background: color-mix(in oklab, var(--color-accent) 5%, var(--color-surface));
+}
+
+/* Estilos para listas de verificación */
+.checklist {
+  background: color-mix(in oklab, var(--color-accent) 8%, var(--color-surface));
+  border-left: 4px solid var(--color-accent);
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.checklist p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Mejoras para listas anidadas */
+.modal-body ul ul {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.modal-body li {
+  margin-bottom: 12px;
+}
+
+.modal-body li h4 {
+  display: inline;
+  color: var(--color-accent);
+}
+
+/* Mejoras de espaciado */
+.modal-body h3 {
+  margin-top: 32px;
+}
+
+.modal-body h4 {
+  margin-top: 24px;
+}
+
+/* Estilos para el botón de volver */
+.btn-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 16px;
+    transition: all 0.2s ease;
+}
+
+.btn-back:hover {
+    background: var(--color-surface);
+    border-color: var(--color-accent);
+}
+
+.close-recommendations {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: var(--color-muted);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-recommendations:hover {
+    color: var(--color-text);
+}
