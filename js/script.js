@@ -147,3 +147,54 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// --- 4. FUNCIONALIDAD SOBRE NOSOTROS ---
+
+// Abrir modal Sobre Nosotros
+const sobreNosotrosLink = document.getElementById('sobre-nosotros-link');
+if (sobreNosotrosLink) {
+    sobreNosotrosLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        const sobreNosotrosModal = document.getElementById('modal-sobre-nosotros');
+        if (sobreNosotrosModal) {
+            sobreNosotrosModal.style.display = 'block';
+        }
+    });
+}
+
+// Cerrar modal Sobre Nosotros con la X
+const closeSobreNosotros = document.querySelector('#modal-sobre-nosotros .close');
+if (closeSobreNosotros) {
+    closeSobreNosotros.addEventListener('click', function() {
+        const sobreNosotrosModal = document.getElementById('modal-sobre-nosotros');
+        if (sobreNosotrosModal) {
+            sobreNosotrosModal.style.display = 'none';
+        }
+    });
+}
+
+// --- 5. FUNCIONALIDAD DE BÚSQUEDA EN GLOSARIO ---
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-glosario');
+    const glosarioContent = document.getElementById('glosario-content');
+    
+    if (searchInput && glosarioContent) {
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
+            const termCards = glosarioContent.querySelectorAll('.termino-card');
+            
+            termCards.forEach(card => {
+                const term = card.getAttribute('data-term').toLowerCase();
+                const termText = card.textContent.toLowerCase();
+                
+                if (term.includes(searchTerm) || termText.includes(searchTerm)) {
+                    card.classList.remove('hidden');
+                    card.classList.add('highlight');
+                } else {
+                    card.classList.add('hidden');
+                    card.classList.remove('highlight');
+                }
+            });
+        });
+    }
+});

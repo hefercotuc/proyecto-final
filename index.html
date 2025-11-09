@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="container nav">
       <div class="brand">
@@ -21,14 +23,16 @@
       </div>
       <nav class="links">
         <a href="#temas">Temas</a>
-        <a href="#blog">Blog</a>
+        <a href="#explorar-temas">Explorar</a>
         <a href="#recursos">Recursos</a>
         <a href="#contacto">Contacto</a>
+        <a href="#" id="sobre-nosotros-link">Sobre Nosotros</a>
         <button class="theme-toggle" id="toggle">Modo</button>
       </nav>
     </div>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="container hero-inner">
       <div>
@@ -57,6 +61,7 @@
     </div>
   </section>
 
+  <!-- 5 TOPICS -->
   <main>
     <section id="temas" class="section">
       <div class="container">
@@ -128,101 +133,15 @@
       </div>
     </section>
 
-    <section id="blog" class="section">
-      <div class="container">
-        <h2>Blog y noticias</h2>
-        <p class="lead">
-          Análisis, opinión y novedades sobre diversidad, género y equidad.
-        </p>
-        <div class="posts">
-          <article class="post">
-            <div class="post-image" style="background: linear-gradient(135deg, #4f46e5, #14b8a6)"></div>
-            <div class="content">
-              <span class="tag">Interseccionalidad</span>
-              <h4>
-                Lenguaje inclusivo: más que palabras, una práctica cotidiana
-              </h4>
-              <p>
-                Guía rápida con ejemplos para hablar y escribir de forma
-                inclusiva sin perder claridad.
-              </p>
-            </div>
-          </article>
-          <div class="grid" style="grid-template-columns: 1fr; gap: 18px">
-            <article class="post">
-              <div class="post-image" style="background: linear-gradient(135deg, #f97316, #eab308)"></div>
-              <div class="content">
-                <span class="tag">Equidad</span>
-                <h4>Cerrar brechas: políticas que sí funcionan</h4>
-                <p>
-                  Casos reales de empresas e instituciones que lograron
-                  resultados medibles.
-                </p>
-              </div>
-            </article>
-            <article class="post">
-              <div class="post-image" style="background: linear-gradient(135deg, #8b5cf6, #ec4899)"></div>
-              <div class="content">
-                <span class="tag">Multiculturalidad</span>
-                <h4>Tradiciones que nos unen</h4>
-                <p>
-                  Cómo celebrar la diversidad fortalece comunidades y
-                  organizaciones.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- MODAL 1 DIVERSIDAD -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Diversidad Cultural y Migración</h2>
+        <div class="modal-body">
+          <h3>Historias de migrantes, costumbres y tradiciones</h3>
 
-    <section id="recursos" class="section">
-      <div class="container">
-        <h2>Recursos</h2>
-        <p class="lead"></p>
-        <div class="resources">
-          <div class="resource">
-            <button class="btn btn-ghost" style="margin-top: 10px"></button>
-          </div>
-          <div class="resource">
-            <button class="btn btn-ghost" style="margin-top: 10px"></button>
-          </div>
-          <div class="resource">
-            <button class="btn btn-ghost" style="margin-top: 10px"></button>
-          </div>
-          <div class="resource">
-            <button class="btn btn-ghost" style="margin-top: 10px"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto" class="section">
-      <div class="container" id="contacto-container">
-        <h2>¿Tienes dudas o quieres colaborar?</h2>
-        <p class="lead">
-          Si te gustaría hacer un aporte, sugerir un nuevo apartado o
-          simplemente quieres charlar sobre el proyecto, ¡envíanos un
-          WhatsApp!
-        </p>
-
-        <a href="https://api.whatsapp.com/send?phone=50256181575&text=%C2%A1Hola%20👋!%20Me%20gustar%C3%ADa%20hacer%20un%20aporte%20o%20sugerir%20agregar%20un%20apartado%20al%20sitio%20💡."
-          class="btn btn-primary cta-whatsapp" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Ventanas modales para cada tema -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Diversidad Cultural y Migración</h2>
-      <div class="modal-body">
-        <h3>Historias de migrantes, costumbres y tradiciones</h3>
-
-        <p>
+          <p>
           La Guerra Civil en Guatemala a principios de los años 80 provocó que
           miles de guatemaltecos huyeran del país. A partir de 1981 inició el
           arribo masivo de refugiados guatemaltecos a México. Se estima que
@@ -238,26 +157,26 @@
           En 1984, un 50% de los refugiados fueron reubicados en los estados de 
           Campeche y Quintana Roo, donde se crearon varios asentamientos en Maya 
           Tecún y Quetzal Edzná, en Campeche; así como Los Lirios, en Quintana Roo.
-        </p>
+          </p>
 
-        <!-- Imágenes -->
-        <div class="modal-images">
-          <div class="modal-image">
-            <img src="./img/modal_1/foto1.jpg" alt="Comunidad migrante compartiendo tradiciones" />
-            <div class="image-caption">
-              Comunidad migrante compartiendo tradiciones
+          <!-- Imágenes -->
+          <div class="modal-images">
+            <div class="modal-image">
+              <img src="./img/modal_1/foto1.jpg" alt="Comunidad migrante compartiendo tradiciones" />
+              <div class="image-caption">
+                Comunidad migrante compartiendo tradiciones
+              </div>
+            </div>
+            <div class="modal-image">
+              <img src="./img/modal_1/foto2.jpg" alt="Celebración intercultural" />
+              <div class="image-caption">
+                Celebración intercultural en comunidad
+              </div>
             </div>
           </div>
-          <div class="modal-image">
-            <img src="./img/modal_1/foto2.jpg" alt="Celebración intercultural" />
-            <div class="image-caption">
-              Celebración intercultural en comunidad
-            </div>
-          </div>
-        </div>
 
-        <h3>Impacto de la migración en la identidad cultural</h3>
-        <p>
+          <h3>Impacto de la migración en la identidad cultural</h3>
+          <p>
           "Hoy en día lo que vemos son personas que ya son naturalizadas como
           mexicanas, obviamente también ya hay una segunda y tercera
           generación que nació aquí e inclusive, lo que en su momento eran los
@@ -270,11 +189,11 @@
           preguntaron al gobierno ¿qué pasará si nos vamos para Guatemala y no
           nos gusta Guatemala, qué vamos a hacer? Si puedes llegar, aquí eres 
           bien recibido, respondió. ¡Qué más queremos! ¿Quién le va a decir eso a uno? 
-          De eso estuvimos muy contentos y estamos muy agradecidos”, concluye Adelina. 
-        </p>
+          De eso estuvimos muy contentos y estamos muy agradecidos”, concluye Adelina.
+          </p>
 
-        <h3>Recursos para integración intercultural</h3>
-        <p>
+          <h3>Recursos para integración intercultural</h3>
+          <p>
           El fondo de apoyo recuperable creado por ACNUR permitió también que
           se financiara a los agricultores con créditos para producir las
           tierras. "Comenzamos a producir ocra para su exportación; en el caso
@@ -294,713 +213,718 @@
            casa y empezaron a hacer excavación para la tubería y para el agua, 
            teníamos que medir el agua porque al principio nos daban cinco cubetas”, 
            comenta desde su casa en Kuchumatán, Juana Marcos Francisco, originaria 
-           de Huehuetenango. 
-        </p>
+           de Huehuetenango.
+          </p>
 
-        <div class="modal-actions">
-          <button class="btn btn-primary"></button>
-          <button class="btn btn-ghost"></button>
+          <div class="modal-actions">
+            <button class="btn btn-primary"></button>
+            <button class="btn btn-ghost"></button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Igualdad de Género y Derechos Humanos</h2>
-      <div class="modal-body">
-        <h3>Movimientos feministas y derechos LGBTQ+</h3>
-        <p>
-          La igualdad de género figura en lugar prominente entre los
-          principios de derechos humanos y los valores de las Naciones Unidas.
-          Sin embargo, en el mundo entero millones de mujeres y miembros del
-          colectivo LGBTI siguen padeciendo discriminación en lo tocante al
-          disfrute de sus derechos civiles, culturales, económicos, políticos
-          y sociales.
-        </p>
+    <!-- MODAL 2 IGUALDAD -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Igualdad de Género y Derechos Humanos</h2>
+        <div class="modal-body">
+          <h3>Movimientos feministas y derechos LGBTQ+</h3>
+          <p>
+            La igualdad de género figura en lugar prominente entre los
+            principios de derechos humanos y los valores de las Naciones Unidas.
+            Sin embargo, en el mundo entero millones de mujeres y miembros del
+            colectivo LGBTI siguen padeciendo discriminación en lo tocante al
+            disfrute de sus derechos civiles, culturales, económicos, políticos
+            y sociales.
+          </p>
 
-        <h3>Brecha salarial y políticas inclusivas</h3>
-        <p>
-          En Guatemala, a nivel nacional el salario promedio que reciben las
-          mujeres es alrededor del 26% menos que el percibido por los hombres.
-          En el caso de la población indígena sus ingresos salariales son, en
-          promedio, menores en un 38% respecto a los de la población no
-          indígena.
-        </p>
+          <h3>Brecha salarial y políticas inclusivas</h3>
+          <p>
+            En Guatemala, a nivel nacional el salario promedio que reciben las
+            mujeres es alrededor del 26% menos que el percibido por los hombres.
+            En el caso de la población indígena sus ingresos salariales son, en
+            promedio, menores en un 38% respecto a los de la población no
+            indígena.
+          </p>
 
-        <h3>Lenguaje inclusivo y su importancia</h3>
-        <p>
-          El lenguaje es poderoso, dinámico, y define la forma en la que vemos
-          el mundo. Identificarnos en nuestros propios términos, con los
-          pronombres que elegimos y ser reconocidos con palabras inclusivas
-          forma parte de la democratización del lenguaje y del orgullo de ser
-          quienes somos.
-        </p>
+          <h3>Lenguaje inclusivo y su importancia</h3>
+          <p>
+            El lenguaje es poderoso, dinámico, y define la forma en la que vemos
+            el mundo. Identificarnos en nuestros propios términos, con los
+            pronombres que elegimos y ser reconocidos con palabras inclusivas
+            forma parte de la democratización del lenguaje y del orgullo de ser
+            quienes somos.
+          </p>
 
-        <h4>Pronombres y autoidentificación</h4>
-        <p>
-          Para personas parte de la comunidad LGBTQ+, como personas
-          transgénero o con identidades no binarias, el lenguaje es clave para
-          su autoidentificación y su inclusión en la sociedad. En varios
-          países de América Latina, como Argentina y Chile, organizaciones
-          impulsan el uso de la letra "e", como "elle" en lugar de él o ella,
-          para marcar la neutralidad gramática.
-        </p>
+          <h4>Pronombres y autoidentificación</h4>
+          <p>
+            Para personas parte de la comunidad LGBTQ+, como personas
+            transgénero o con identidades no binarias, el lenguaje es clave para
+            su autoidentificación y su inclusión en la sociedad. En varios
+            países de América Latina, como Argentina y Chile, organizaciones
+            impulsan el uso de la letra "e", como "elle" en lugar de él o ella,
+            para marcar la neutralidad gramática.
+          </p>
 
-        <div class="modal-actions">
-          <button class="btn btn-primary"></button>
-          <button class="btn btn-ghost"></button>
+          <div class="modal-actions">
+            <button class="btn btn-primary"></button>
+            <button class="btn btn-ghost"></button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    
+    <!-- MODAL 3 EQUIDAD -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Equidad Social y Justicia</h2>
+            <div class="modal-body">
+                <p>
+                    La justicia y la equidad sociales son principios fundamentales que
+                    buscan una sociedad donde la distribución de la riqueza, las
+                    oportunidades y los privilegios sean justa e igualitaria, sin
+                    distinción de edad, sexo, discapacidad, raza, etnia, origen,
+                    religión o situación económica.
+                </p>
 
-  <div id="modal3" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Equidad Social y Justicia</h2>
-      <div class="modal-body">
-        <p>
-          La justicia y la equidad sociales son principios fundamentales que
-          buscan una sociedad donde la distribución de la riqueza, las
-          oportunidades y los privilegios sean justa e igualitaria, sin
-          distinción de edad, sexo, discapacidad, raza, etnia, origen,
-          religión o situación económica.
-        </p>
+                <ul>
+                    <li>
+                        <h4>Justicia Social:</h4>
+                        <p>
+                            Se refiere al valor de que todas las personas tengan los mismos
+                            derechos y oportunidades y sean tratadas con el mismo respeto y
+                            dignidad. Busca corregir las desigualdades estructurales y
+                            garantizar que las necesidades básicas de todos estén cubiertas.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Equidad Social:</h4>
+                        <p>
+                            Se diferencia de la simple "igualdad" en que no solo promueve
+                            las mismas condiciones y oportunidades para todos, sino que
+                            también se adapta a las necesidades particulares de los grupos
+                            en desventaja para compensar las injusticias históricas y las
+                            barreras sociales existentes. Es el principio de dar a cada uno
+                            lo que necesita para que todos puedan alcanzar los mismos
+                            resultados. Un concepto clave es el Universalismo Proporcional,
+                            que sugiere que las acciones deben ser universales (dirigidas a
+                            todos) pero con mayor intensidad y recursos hacia los grupos con
+                            mayores desventajas.
+                        </p>
+                    </li>
+                </ul>
 
-        <ul>
-          <li>
-            <h4>Justicia Social:</h4>
-            <p>
-              Se refiere al valor de que todas las personas tengan los mismos
-              derechos y oportunidades y sean tratadas con el mismo respeto y
-              dignidad. Busca corregir las desigualdades estructurales y
-              garantizar que las necesidades básicas de todos estén cubiertas.
-            </p>
-          </li>
-          <li>
-            <h4>Equidad Social:</h4>
-            <p>
-              Se diferencia de la simple "igualdad" en que no solo promueve
-              las mismas condiciones y oportunidades para todos, sino que
-              también se adapta a las necesidades particulares de los grupos
-              en desventaja para compensar las injusticias históricas y las
-              barreras sociales existentes. Es el principio de dar a cada uno
-              lo que necesita para que todos puedan alcanzar los mismos
-              resultados. Un concepto clave es el Universalismo Proporcional,
-              que sugiere que las acciones deben ser universales (dirigidas a
-              todos) pero con mayor intensidad y recursos hacia los grupos con
-              mayores desventajas.
-            </p>
-          </li>
-        </ul>
+                <p>
+                    La implementación de estos principios es vital para el cumplimiento
+                    de los Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030,
+                    especialmente el ODS 10, que busca reducir la desigualdad en y entre
+                    los países.
+                </p>
 
-        <p>
-          La implementación de estos principios es vital para el cumplimiento
-          de los Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030,
-          especialmente el ODS 10, que busca reducir la desigualdad en y entre
-          los países.
-        </p>
+                <!-- Espacio para imagen -->
+                <div class="modal-images">
+                    <div class="modal-image">
+                        <img src="./img/modal_3/representacion_1.0.jpg" alt="Representación visual de equidad social" />
+                        <div class="image-caption">Representación de equidad social</div>
+                    </div>
+                    <div class="modal-image">
+                        <img src="./img/modal_3/representacion_1.1.jpg" alt="Representación visual de equidad social" />
+                        <div class="image-caption">Representación de equidad social</div>
+                    </div>
+                </div>
 
-        <!-- Espacio para imagen -->
-        <div class="modal-images">
-          <div class="modal-image">
-            <img src="./img/modal_3/representacion_1.0.jpg" alt="Representación visual de equidad social" />
-            <div class="image-caption">Representación de equidad social</div>
-          </div>
-          <div class="modal-image">
-            <img src="./img/modal_3/representacion_1.1.jpg" alt="Representación visual de equidad social" />
-            <div class="image-caption">Representación de equidad social</div>
-          </div>
-        </div>
+                <h3>Acceso a Educación y Salud para Grupos Vulnerables</h3>
+                <p>
+                    El acceso a la educación y la salud son derechos humanos esenciales
+                    y determinantes sociales de la salud y el desarrollo. Para los
+                    grupos vulnerables (como personas con discapacidad, pueblos
+                    indígenas, minorías étnicas, personas refugiadas y migrantes, y
+                    poblaciones en situación de pobreza extrema), las barreras son
+                    históricas y complejas:
+                </p>
 
-        <h3>Acceso a Educación y Salud para Grupos Vulnerables</h3>
-        <p>
-          El acceso a la educación y la salud son derechos humanos esenciales
-          y determinantes sociales de la salud y el desarrollo. Para los
-          grupos vulnerables (como personas con discapacidad, pueblos
-          indígenas, minorías étnicas, personas refugiadas y migrantes, y
-          poblaciones en situación de pobreza extrema), las barreras son
-          históricas y complejas:
-        </p>
+                <h4>Acceso a la Educación</h4>
+                <p>
+                    El objetivo no es solo la matriculación, sino el acceso a una
+                    educación de calidad, incluyente y equitativa que valore la
+                    diversidad y elimine las barreras al aprendizaje.
+                </p>
 
-        <h4>Acceso a la Educación</h4>
-        <p>
-          El objetivo no es solo la matriculación, sino el acceso a una
-          educación de calidad, incluyente y equitativa que valore la
-          diversidad y elimine las barreras al aprendizaje.
-        </p>
+                <ul>
+                    <li>
+                        <h4>Barreras:</h4>
+                        <p>
+                            Falta de infraestructura accesible (física y tecnológica),
+                            currículos que no son sensibles cultural o lingüísticamente,
+                            discriminación y exclusión, y una financiación pública desigual
+                            para el aprendizaje de adultos.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Estrategias Clave:</h4>
+                        <ul>
+                            <li>
+                                <strong>Accesibilidad y Ajustes Razonables:</strong> Adoptar
+                                medidas para eliminar las barreras físicas, comunicacionales y
+                                de diseño curricular, ajustándose a las necesidades
+                                individuales (ej. uso de tecnologías de la información y
+                                comunicación accesibles).
+                            </li>
+                            <li>
+                                <strong>Inclusión Cultural y Lingüística:</strong> Incorporar
+                                la cultura, las artes, los deportes y la diversidad
+                                lingüística en currículos y prácticas pedagógicas.
+                            </li>
+                            <li>
+                                <strong>Políticas de Acción Afirmativa:</strong> Programas de
+                                becas, educación gratuita y dirigida, para romper el círculo
+                                de la pobreza.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
 
-        <ul>
-          <li>
-            <h4>Barreras:</h4>
-            <p>
-              Falta de infraestructura accesible (física y tecnológica),
-              currículos que no son sensibles cultural o lingüísticamente,
-              discriminación y exclusión, y una financiación pública desigual
-              para el aprendizaje de adultos.
-            </p>
-          </li>
-          <li>
-            <h4>Estrategias Clave:</h4>
-            <ul>
-              <li>
-                <strong>Accesibilidad y Ajustes Razonables:</strong> Adoptar
-                medidas para eliminar las barreras físicas, comunicacionales y
-                de diseño curricular, ajustándose a las necesidades
-                individuales (ej. uso de tecnologías de la información y
-                comunicación accesibles).
-              </li>
-              <li>
-                <strong>Inclusión Cultural y Lingüística:</strong> Incorporar
-                la cultura, las artes, los deportes y la diversidad
-                lingüística en currículos y prácticas pedagógicas.
-              </li>
-              <li>
-                <strong>Políticas de Acción Afirmativa:</strong> Programas de
-                becas, educación gratuita y dirigida, para romper el círculo
-                de la pobreza.
-              </li>
-            </ul>
-          </li>
-        </ul>
+                <!-- Espacio para imagen -->
+                <div class="modal-images">
+                    <div class="modal-image">
+                        <img src="./img/modal_3/educacion_1.0.jpg" alt="Acceso a la Educación" />
+                        <div class="image-caption">
+                            Acceso a la educación para grupos vulnerables
+                        </div>
+                    </div>
+                    <div class="modal-image">
+                        <img src="./img/modal_3/educacion_1.1.jpg" alt="Acceso a la Educación" />
+                        <div class="image-caption">Educación inclusiva y equitativa</div>
+                    </div>
+                </div>
 
-        <!-- Espacio para imagen -->
-        <div class="modal-images">
-          <div class="modal-image">
-            <img src="./img/modal_3/educacion_1.0.jpg" alt="Acceso a la Educación" />
-            <div class="image-caption">
-              Acceso a la educación para grupos vulnerables
+                <h4>Acceso a la Salud</h4>
+                <p>
+                    El acceso equitativo a la salud es un componente fundamental de la
+                    justicia social. Implica garantizar que todas las personas, sin
+                    importar su condición, puedan recibir atención médica de calidad
+                    (incluida la salud reproductiva y mental), nutrición adecuada y
+                    alojamiento digno.
+                </p>
+
+                <ul>
+                    <li>
+                        <h4>Enfoque de Determinantes Sociales:</h4>
+                        <p>
+                            Para promover la equidad en salud, es crucial abordar las causas
+                            subyacentes de las inequidades, como el acceso a la educación,
+                            las oportunidades económicas y el medio ambiente.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Recomendación de la OMS/OPS:</h4>
+                        <p>
+                            Fomentar la salud y la equidad sanitaria con carácter
+                            prioritario, actuación sobre los determinantes sociales,
+                            económicos y ambientales.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Estrategias:</h4>
+                        <p>
+                            Sistemas de salud gratuitos o accesibles, fortalecimiento de
+                            entornos saludables (escuelas, lugares de trabajo), y programas
+                            de promoción de la salud que facilitan la participación y el
+                            empoderamiento de la comunidad para que aboguen por sus
+                            necesidades.
+                        </p>
+                    </li>
+                </ul>
+
+                <!-- Espacio para imagen -->
+                <div class="modal-images">
+                    <div class="modal-image">
+                        <img src="./img/modal_3/salud_1.0.jpg" alt="Acceso a la Salud" />
+                        <div class="image-caption">
+                            Acceso equitativo a servicios de salud
+                        </div>
+                    </div>
+                    <div class="modal-image">
+                        <img src="./img/modal_3/salud_1.1.jpg" alt="Acceso a la Salud" />
+                        <div class="image-caption">Promoción de la salud comunitaria</div>
+                    </div>
+                </div>
+
+                <h3>Casos de Éxito (Gobierno y Empresas): Evidencia y Lecciones</h3>
+                <p>
+                    Los casos de éxito demuestran que la equidad y la justicia social no
+                    solo son éticas, sino que también impulsan el bienestar social y un
+                    sistema económico favorable para la productividad y la innovación.
+                </p>
+
+                <h4>Gobierno y Políticas Públicas</h4>
+                <div class="table-container">
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>Caso de Éxito</th>
+                                <th>Evidencia y mecanismos</th>
+                                <th>Lecciones Clave</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Sistemas de Salud Universal (Ej. España, países nórdicos)
+                                </td>
+                                <td>
+                                    Garantizan el acceso a servicios médicos sin costo directo o
+                                    con costos mínimos para toda la ciudadanía.
+                                </td>
+                                <td>
+                                    La salud no es un privilegio. La cobertura universal reduce
+                                    la mortalidad infantil y mejora la calidad de vida general.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Cuotas de Género en Política (Varios países de América
+                                    Latina y Europa)
+                                </td>
+                                <td>
+                                    Leyes que establecen porcentajes mínimos de representación
+                                    de mujeres en cargos electorales o directivos.
+                                </td>
+                                <td>
+                                    Acción afirmativa como catalizador. La representación de
+                                    grupos subrepresentados a través de cuotas acelera el
+                                    progreso hacia la igualdad de género y la diversidad de
+                                    perspectivas.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ley de Igualdad Salarial (Países con legislación estricta
+                                    sobre la brecha salarial)
+                                </td>
+                                <td>
+                                    Obliga a las empresas a auditar y reportar la diferencia
+                                    salarial por género para garantizar un mismo salario por un
+                                    mismo trabajo.
+                                </td>
+                                <td>
+                                    Transparencia y regulación. La intervención legal es
+                                    necesaria para cerrar brechas de mercado arraigadas y la
+                                    discriminación indirecta.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Espacio para imagen -->
+                <div class="modal-images">
+                    <div class="modal-image">
+                        <img src="./img/modal_3/politicas_1.0.jpg" alt="Políticas públicas exitosas" />
+                        <div class="image-caption">
+                            Implementación de políticas públicas exitosas
+                        </div>
+                    </div>
+                    <div class="modal-image">
+                        <img src="./img/modal_3/politicas_1.1.jpg" alt="Políticas públicas exitosas" />
+                        <div class="image-caption">
+                            Implementación de políticas públicas exitosas
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Empresas y Sector Privado</h4>
+                <div class="table-container">
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>Caso de Éxito</th>
+                                <th>Evidencia y mecanismos</th>
+                                <th>Lecciones Clave</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Planes de Diversidad e Inclusión (D&I) (Grandes
+                                    corporaciones globales)
+                                </td>
+                                <td>
+                                    Programas para aumentar la representación de mujeres,
+                                    minorías étnicas y personas con discapacidad en puestos
+                                    directivos, con apoyo de head-hunters y escuelas de negocio.
+                                </td>
+                                <td>
+                                    La diversidad es un activo estratégico. La inclusión en
+                                    ámbitos de decisión fomenta la innovación y mejora el
+                                    desempeño empresarial.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Comercio Justo (Cooperativas y marcas)</td>
+                                <td>
+                                    Certificación que garantiza salarios dignos y condiciones
+                                    laborales justas para productores en países en desarrollo, a
+                                    menudo mujeres o poblaciones rurales.
+                                </td>
+                                <td>
+                                    Responsabilidad social corporativa. La elección de marcas
+                                    responsables y solidarias tiene un impacto directo en la
+                                    reducción de las desigualdades económicas globales.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Programas de Ascenso de Talento Interno</td>
+                                <td>
+                                    Empresas que implementan políticas para identificar y
+                                    promover a empleados de grupos subrepresentados a través de
+                                    mentoría y desarrollo de habilidades.
+                                </td>
+                                <td>
+                                    Rompe el techo de cristal/bambú. El compromiso proactivo y
+                                    la actitud positiva de la organización son vitales para
+                                    superar las barreras estructurales.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Espacio para imagen -->
+                <div class="modal-images">
+                    <div class="modal-image">
+                        <img src="./img/modal_3/empresas_1.0.jpg" alt="Empresas inclusivas" />
+                        <div class="image-caption">
+                            Empresas que implementan prácticas inclusivas
+                        </div>
+                    </div>
+                    <div class="modal-image">
+                        <img src="./img/modal_3/empresas_1.1.jpg" alt="Empresas inclusivas" />
+                        <div class="image-caption">
+                            Empresas que implementan prácticas inclusivas
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOTONES FINALES DEL MODAL PRINCIPAL -->
+                <div class="modal-actions">
+                    <button class="btn btn-primary" id="open-recommendations">
+                        Recomendaciones Prácticas
+                    </button>
+                    <button class="btn btn-ghost">Compartir</button>
+                </div>
             </div>
-          </div>
-          <div class="modal-image">
-            <img src="./img/modal_3/educacion_1.1.jpg" alt="Acceso a la Educación" />
-            <div class="image-caption">Educación inclusiva y equitativa</div>
-          </div>
         </div>
+    </div>
+    
+    <!-- MODAL DE RECOMENDACIONES PRÁCTICAS -->
+    <div id="modal3-recommendations" class="modal">
+        <div class="modal-content">
+            <span class="close close-recommendations">&times;</span>
+            <button class="btn-back" id="back-to-main">
+                <i class="fas fa-arrow-left"></i> Volver al contenido principal
+            </button>
+            <h2>Recomendaciones Prácticas y Checklist</h2>
+            <div class="modal-body">
+                <p>
+                    Para diseñar e implementar políticas, programas y proyectos que
+                    promuevan la equidad y la justicia social, se requiere un enfoque
+                    metódico y con perspectiva de derechos humanos.
+                </p>
 
-        <h4>Acceso a la Salud</h4>
-        <p>
-          El acceso equitativo a la salud es un componente fundamental de la
-          justicia social. Implica garantizar que todas las personas, sin
-          importar su condición, puedan recibir atención médica de calidad
-          (incluida la salud reproductiva y mental), nutrición adecuada y
-          alojamiento digno.
-        </p>
+                <h3>Diseño y Planificación</h3>
+                <ul>
+                    <li>
+                        <h4>Diagnóstico con Enfoque de Derechos:</h4>
+                        <p>
+                            Realizar un análisis inicial para identificar las barreras
+                            específicas (legales, sociales, económicas) que afectan a los
+                            grupos vulnerables en el sector de la intervención.
+                        </p>
+                        <div class="checklist">
+                            <p>
+                                <strong>Lista de verificación:</strong> ¿Se han identificado y
+                                desagregado los datos por edad, sexo, etnia, discapacidad y
+                                ubicación?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Participación Genuina:</h4>
+                        <p>
+                            Involucrar a los grupos vulnerables y a las partes interesadas
+                            (ONGs, académicos) en el diseño de las soluciones.
+                        </p>
+                        <div class="checklist">
+                            <p>
+                                <strong>Lista de verificación:</strong> ¿Han participado los
+                                beneficiarios directos en la definición de las metas y las
+                                acciones?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Universalismo Proporcional:</h4>
+                        <p>
+                            Diseñar acciones que sean universales, pero que destinen mayores
+                            recursos o apoyos diferenciados a quienes más lo necesitan.
+                        </p>
+                        <div class="checklist">
+                            <p>
+                                <strong>Lista de verificación:</strong> ¿La política beneficia
+                                a todos, pero tiene medidas de acción afirmativa para los más
+                                desfavorecidos (ej. becas o subsidios especiales)?
+                            </p>
+                        </div>
+                    </li>
+                </ul>
 
-        <ul>
-          <li>
-            <h4>Enfoque de Determinantes Sociales:</h4>
-            <p>
-              Para promover la equidad en salud, es crucial abordar las causas
-              subyacentes de las inequidades, como el acceso a la educación,
-              las oportunidades económicas y el medio ambiente.
-            </p>
-          </li>
-          <li>
-            <h4>Recomendación de la OMS/OPS:</h4>
-            <p>
-              Fomentar la salud y la equidad sanitaria con carácter
-              prioritario, actuación sobre los determinantes sociales,
-              económicos y ambientales.
-            </p>
-          </li>
-          <li>
-            <h4>Estrategias:</h4>
-            <p>
-              Sistemas de salud gratuitos o accesibles, fortalecimiento de
-              entornos saludables (escuelas, lugares de trabajo), y programas
-              de promoción de la salud que facilitan la participación y el
-              empoderamiento de la comunidad para que aboguen por sus
-              necesidades.
-            </p>
-          </li>
-        </ul>
+                <!-- Espacio para imagen -->
+                <div class="modal-images">
+                    <div class="modal-image">
+                        <img src="./img/modal_3/proceso_1.0.jpg" alt="Diseño y planificación" />
+                        <div class="image-caption">
+                            Proceso de diseño y planificación de políticas
+                        </div>
+                    </div>
+                    <div class="modal-image">
+                        <img src="./img/modal_3/proceso_1.1.jpg" alt="Diseño y planificación" />
+                        <div class="image-caption">
+                            Proceso de diseño y planificación de políticas
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Espacio para imagen -->
-        <div class="modal-images">
-          <div class="modal-image">
-            <img src="./img/modal_3/salud_1.0.jpg" alt="Acceso a la Salud" />
-            <div class="image-caption">
-              Acceso equitativo a servicios de salud
+                <h3>Implementación</h3>
+                <ul>
+                    <li>
+                        <h4>Capacitación y Concienciación:</h4>
+                        <p>
+                            Desarrollar programas de formación obligatorios para el personal
+                            sobre perspectiva de género, derechos humanos, inclusión y no
+                            discriminación.
+                        </p>
+                        <div class="checklist">
+                            <p>
+                                <strong>Lista de verificación:</strong> ¿El equipo
+                                implementador ha recibido formación para deconstruir
+                                estereotipos y reconocer barreras de acceso?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Marco Legal y Normativo:</h4>
+                        <p>
+                            Asegurar que el diseño de las políticas se ancle en los tratados
+                            y acuerdos internacionales de derechos humanos (ej. Convención
+                            sobre los Derechos de las Personas con Discapacidad).
+                        </p>
+                        <div class="checklist">
+                            <p>
+                                <strong>Lista de verificación:</strong> ¿Se han eliminado las
+                                leyes, políticas o prácticas que introdujeron o perpetúan la
+                                discriminación?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Colaboración Intersectorial:</h4>
+                        <p>
+                            Crear estructuras y mecanismos para fomentar el diálogo y la
+                            acción conjunta entre diferentes instancias gubernamentales y
+                            con el sector privado.
+                        </p>
+                        <div class="checklist">
+                            <p>
+                                <strong>Lista de verificación:</strong> ¿Existen alianzas
+                                estratégicas con empresas (RSC) y otras agencias
+                                gubernamentales (ej. Educación y Salud) para abordar los
+                                determinantes sociales?
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Espacio para imagen -->
+                <div class="modal-images">
+                    <div class="modal-image">
+                        <img src="./img/modal_3/efectiva_1.0.jpg" alt="Implementación de políticas" />
+                        <div class="image-caption">
+                            Implementación efectiva de políticas sociales
+                        </div>
+                    </div>
+                    <div class="modal-image">
+                        <img src="./img/modal_3/efectiva_1.1.jpg" alt="Implementación de políticas" />
+                        <div class="image-caption">
+                            Implementación efectiva de políticas sociales
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Monitoreo y Evaluación (M&E)</h3>
+                <ul>
+                    <li>
+                        <h4>Uso de Indicadores de Derechos Humanos:</h4>
+                        <p>
+                            Implementar un sistema de M&E que utilice indicadores
+                            estructurales (leyes y políticas), de proceso (ejecución de
+                            acciones) y de resultados (impacto en la vida de las personas).
+                        </p>
+                        <div class="checklist">
+                            <p>
+                                <strong>Lista de verificación:</strong> ¿Se están midiendo los
+                                resultados más allá de la simple ejecución, como la reducción
+                                de la brecha salarial o el aumento en la calidad de la salud
+                                percibida?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Análisis de Impacto Desagregado:</h4>
+                        <p>
+                            Monitorear el avance para el cumplimiento de los derechos
+                            humanos, desagregando los datos por los factores de
+                            vulnerabilidad.
+                        </p>
+                        <div class="checklist">
+                            <p>
+                                <strong>Lista de verificación:</strong> ¿Los datos del
+                                monitoreo muestran si la intervención está reduciendo las
+                                brechas entre los grupos más desfavorecidos y el promedio
+                                nacional?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Mecanismos de Rendición de Cuentas:</h4>
+                        <p>
+                            Establecer procesos claros para que los ciudadanos y los grupos
+                            vulnerables puedan presentar quejas o denuncias por fallas en el
+                            acceso a los servicios o actos de discriminación.
+                        </p>
+                        <div class="checklist">
+                            <p>
+                                <strong>Lista de verificación:</strong> ¿Existe un mecanismo
+                                de quejas accesible y confidencial, y se utiliza la
+                                información para corregir el rumbo de la implementación?
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Espacio para imagen -->
+                <div class="modal-images">
+                    <div class="modal-image">
+                        <img src="./img/modal_3/sistemas_1.0.jpg" alt="Monitoreo y evaluación" />
+                        <div class="image-caption">
+                            Sistemas de monitoreo y evaluación
+                        </div>
+                    </div>
+                    <div class="modal-image">
+                        <img src="./img/modal_3/sistemas_1.1.jpg" alt="Monitoreo y evaluación" />
+                        <div class="image-caption">
+                            Sistemas de monitoreo y evaluación
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button class="btn btn-primary" id="back-to-main-bottom">
+                        Volver al contenido principal
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="modal-image">
-            <img src="./img/modal_3/salud_1.1.jpg" alt="Acceso a la Salud" />
-            <div class="image-caption">Promoción de la salud comunitaria</div>
-          </div>
         </div>
+    </div>
 
-        <h3>Casos de Éxito (Gobierno y Empresas): Evidencia y Lecciones</h3>
-        <p>
-          Los casos de éxito demuestran que la equidad y la justicia social no
-          solo son éticas, sino que también impulsan el bienestar social y un
-          sistema económico favorable para la productividad y la innovación.
-        </p>
+    <!-- MODAL 4 EQUIDAD -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Interseccionalidad</h2>
+        <div class="modal-body">
+          <h3>Cómo se cruzan género, raza, clase y cultura</h3>
+          <p>
+            La <strong>interseccionalidad</strong> explica cómo distintas formas
+            de desigualdad como el género, la raza, la clase o la cultura se
+            combinan y afectan simultáneamente a una persona. Este concepto fue
+            propuesto por <strong>Kimberlé Crenshaw (1989)</strong> para mostrar
+            que las mujeres afroamericanas sufrían discriminación tanto por su
+            género como por su raza.
+          </p>
 
-        <h4>Gobierno y Políticas Públicas</h4>
-        <div class="table-container">
-          <table class="content-table">
-            <thead>
-              <tr>
-                <th>Caso de Éxito</th>
-                <th>Evidencia y mecanismos</th>
-                <th>Lecciones Clave</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  Sistemas de Salud Universal (Ej. España, países nórdicos)
-                </td>
-                <td>
-                  Garantizan el acceso a servicios médicos sin costo directo o
-                  con costos mínimos para toda la ciudadanía.
-                </td>
-                <td>
-                  La salud no es un privilegio. La cobertura universal reduce
-                  la mortalidad infantil y mejora la calidad de vida general.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Cuotas de Género en Política (Varios países de América
-                  Latina y Europa)
-                </td>
-                <td>
-                  Leyes que establecen porcentajes mínimos de representación
-                  de mujeres en cargos electorales o directivos.
-                </td>
-                <td>
-                  Acción afirmativa como catalizador. La representación de
-                  grupos subrepresentados a través de cuotas acelera el
-                  progreso hacia la igualdad de género y la diversidad de
-                  perspectivas.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Ley de Igualdad Salarial (Países con legislación estricta
-                  sobre la brecha salarial)
-                </td>
-                <td>
-                  Obliga a las empresas a auditar y reportar la diferencia
-                  salarial por género para garantizar un mismo salario por un
-                  mismo trabajo.
-                </td>
-                <td>
-                  Transparencia y regulación. La intervención legal es
-                  necesaria para cerrar brechas de mercado arraigadas y la
-                  discriminación indirecta.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+          <p>
+            En <strong>Guatemala y América Latina</strong>, la
+            interseccionalidad se refleja cuando una persona enfrenta exclusión
+            por varios factores a la vez: por ejemplo, ser mujer, indígena y de
+            bajos recursos. Su realidad no puede entenderse desde una sola
+            categoría, sino desde la unión de todas ellas.
+          </p>
 
-        <!-- Espacio para imagen -->
-        <div class="modal-images">
-          <div class="modal-image">
-            <img src="./img/modal_3/politicas_1.0.jpg" alt="Políticas públicas exitosas" />
-            <div class="image-caption">
-              Implementación de políticas públicas exitosas
-            </div>
+          <h3>Desafíos y oportunidades para la inclusión</h3>
+          <p>
+            Uno de los mayores <strong>desafíos</strong> es que muchas políticas
+            públicas se enfocan en una sola forma de desigualdad, dejando fuera
+            a quienes viven <strong>múltiples exclusiones</strong>. Por ejemplo,
+            una <strong>mujer indígena rural</strong> puede tener menos acceso a
+            la educación que una mujer urbana no indígena, debido a
+            <strong>barreras lingüísticas, culturales y económicas</strong>.
+          </p>
+
+          <p>
+            Sin embargo, la interseccionalidad también abre
+            <strong>oportunidades</strong> para crear políticas
+            <strong>más justas y efectivas</strong>, reconociendo la diversidad
+            de las personas. Hoy,
+            <strong>movimientos sociales, colectivos indígenas y feministas</strong>
+            incorporan este enfoque para promover una
+            <strong>igualdad más real e inclusiva</strong>.
+          </p>
+
+          <h3>Historias que muestran estas intersecciones</h3>
+          <ul>
+            <li>
+              <strong>Mujeres indígenas defensoras del territorio:</strong>
+              enfrentan triple discriminación por ser mujeres, indígenas y
+              activistas contra proyectos extractivos. Aun así, se organizan
+              para
+              <strong>defender sus derechos y liderar sus comunidades</strong>.
+            </li>
+            <li>
+              <strong>Jóvenes LGBTQ+ indígenas:</strong> además de luchar por el
+              reconocimiento de su identidad, enfrentan
+              <strong>rechazo dentro y fuera</strong> de sus comunidades.
+            </li>
+          </ul>
+
+          <p>
+            Estos ejemplos muestran que la <strong>inclusión</strong> no se
+            trata solo de género o raza, sino de entender cómo
+            <strong>todas las identidades se entrelazan</strong>.
+          </p>
+
+          <h3>Conclusión</h3>
+          <p>
+            La interseccionalidad nos invita a mirar la sociedad con más
+            empatía, entendiendo que
+            <strong>cada persona vive una combinación única de experiencias</strong>. Solo reconociendo esas diferencias
+            podremos construir una
+            <strong>sociedad verdaderamente equitativa</strong>.
+          </p>
+
+          <div class="modal-actions">
+            <button class="btn btn-primary"></button>
+            <button class="btn btn-ghost"></button>
           </div>
-          <div class="modal-image">
-            <img src="./img/modal_3/politicas_1.1.jpg" alt="Políticas públicas exitosas" />
-            <div class="image-caption">
-              Implementación de políticas públicas exitosas
-            </div>
-          </div>
-        </div>
-
-        <h4>Empresas y Sector Privado</h4>
-        <div class="table-container">
-          <table class="content-table">
-            <thead>
-              <tr>
-                <th>Caso de Éxito</th>
-                <th>Evidencia y mecanismos</th>
-                <th>Lecciones Clave</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  Planes de Diversidad e Inclusión (D&I) (Grandes
-                  corporaciones globales)
-                </td>
-                <td>
-                  Programas para aumentar la representación de mujeres,
-                  minorías étnicas y personas con discapacidad en puestos
-                  directivos, con apoyo de head-hunters y escuelas de negocio.
-                </td>
-                <td>
-                  La diversidad es un activo estratégico. La inclusión en
-                  ámbitos de decisión fomenta la innovación y mejora el
-                  desempeño empresarial.
-                </td>
-              </tr>
-              <tr>
-                <td>Comercio Justo (Cooperativas y marcas)</td>
-                <td>
-                  Certificación que garantiza salarios dignos y condiciones
-                  laborales justas para productores en países en desarrollo, a
-                  menudo mujeres o poblaciones rurales.
-                </td>
-                <td>
-                  Responsabilidad social corporativa. La elección de marcas
-                  responsables y solidarias tiene un impacto directo en la
-                  reducción de las desigualdades económicas globales.
-                </td>
-              </tr>
-              <tr>
-                <td>Programas de Ascenso de Talento Interno</td>
-                <td>
-                  Empresas que implementan políticas para identificar y
-                  promover a empleados de grupos subrepresentados a través de
-                  mentoría y desarrollo de habilidades.
-                </td>
-                <td>
-                  Rompe el techo de cristal/bambú. El compromiso proactivo y
-                  la actitud positiva de la organización son vitales para
-                  superar las barreras estructurales.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Espacio para imagen -->
-        <div class="modal-images">
-          <div class="modal-image">
-            <img src="./img/modal_3/empresas_1.0.jpg" alt="Empresas inclusivas" />
-            <div class="image-caption">
-              Empresas que implementan prácticas inclusivas
-            </div>
-          </div>
-          <div class="modal-image">
-            <img src="./img/modal_3/empresas_1.1.jpg" alt="Empresas inclusivas" />
-            <div class="image-caption">
-              Empresas que implementan prácticas inclusivas
-            </div>
-          </div>
-        </div>
-        <div class="modal-actions">
-          <button class="btn btn-primary" id="open-recommendations">
-            Recomendaciones Prácticas
-          </button>
-          <button class="btn btn-ghost">Compartir</button>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Modal de Recomendaciones Prácticas -->
-  <div id="modal3-recommendations" class="modal">
-    <div class="modal-content">
-      <span class="close close-recommendations">&times;</span>
-      <button class="btn-back" id="back-to-main">
-        <i class="fas fa-arrow-left"></i> Volver al contenido principal
-      </button>
-      <h2>Recomendaciones Prácticas y Checklist</h2>
-      <div class="modal-body">
-        <p>
-          Para diseñar e implementar políticas, programas y proyectos que
-          promuevan la equidad y la justicia social, se requiere un enfoque
-          metódico y con perspectiva de derechos humanos.
-        </p>
-
-        <h3>Diseño y Planificación</h3>
-        <ul>
-          <li>
-            <h4>Diagnóstico con Enfoque de Derechos:</h4>
-            <p>
-              Realizar un análisis inicial para identificar las barreras
-              específicas (legales, sociales, económicas) que afectan a los
-              grupos vulnerables en el sector de la intervención.
-            </p>
-            <div class="checklist">
-              <p>
-                <strong>Lista de verificación:</strong> ¿Se han identificado y
-                desagregado los datos por edad, sexo, etnia, discapacidad y
-                ubicación?
-              </p>
-            </div>
-          </li>
-          <li>
-            <h4>Participación Genuina:</h4>
-            <p>
-              Involucrar a los grupos vulnerables y a las partes interesadas
-              (ONGs, académicos) en el diseño de las soluciones.
-            </p>
-            <div class="checklist">
-              <p>
-                <strong>Lista de verificación:</strong> ¿Han participado los
-                beneficiarios directos en la definición de las metas y las
-                acciones?
-              </p>
-            </div>
-          </li>
-          <li>
-            <h4>Universalismo Proporcional:</h4>
-            <p>
-              Diseñar acciones que sean universales, pero que destinen mayores
-              recursos o apoyos diferenciados a quienes más lo necesitan.
-            </p>
-            <div class="checklist">
-              <p>
-                <strong>Lista de verificación:</strong> ¿La política beneficia
-                a todos, pero tiene medidas de acción afirmativa para los más
-                desfavorecidos (ej. becas o subsidios especiales)?
-              </p>
-            </div>
-          </li>
-        </ul>
-
-        <!-- Espacio para imagen -->
-        <div class="modal-images">
-          <div class="modal-image">
-            <img src="./img/modal_3/proceso_1.0.jpg" alt="Diseño y planificación" />
-            <div class="image-caption">
-              Proceso de diseño y planificación de políticas
-            </div>
-          </div>
-          <div class="modal-image">
-            <img src="./img/modal_3/proceso_1.1.jpg" alt="Diseño y planificación" />
-            <div class="image-caption">
-              Proceso de diseño y planificación de políticas
-            </div>
-          </div>
-        </div>
-
-        <h3>Implementación</h3>
-        <ul>
-          <li>
-            <h4>Capacitación y Concienciación:</h4>
-            <p>
-              Desarrollar programas de formación obligatorios para el personal
-              sobre perspectiva de género, derechos humanos, inclusión y no
-              discriminación.
-            </p>
-            <div class="checklist">
-              <p>
-                <strong>Lista de verificación:</strong> ¿El equipo
-                implementador ha recibido formación para deconstruir
-                estereotipos y reconocer barreras de acceso?
-              </p>
-            </div>
-          </li>
-          <li>
-            <h4>Marco Legal y Normativo:</h4>
-            <p>
-              Asegurar que el diseño de las políticas se ancle en los tratados
-              y acuerdos internacionales de derechos humanos (ej. Convención
-              sobre los Derechos de las Personas con Discapacidad).
-            </p>
-            <div class="checklist">
-              <p>
-                <strong>Lista de verificación:</strong> ¿Se han eliminado las
-                leyes, políticas o prácticas que introdujeron o perpetúan la
-                discriminación?
-              </p>
-            </div>
-          </li>
-          <li>
-            <h4>Colaboración Intersectorial:</h4>
-            <p>
-              Crear estructuras y mecanismos para fomentar el diálogo y la
-              acción conjunta entre diferentes instancias gubernamentales y
-              con el sector privado.
-            </p>
-            <div class="checklist">
-              <p>
-                <strong>Lista de verificación:</strong> ¿Existen alianzas
-                estratégicas con empresas (RSC) y otras agencias
-                gubernamentales (ej. Educación y Salud) para abordar los
-                determinantes sociales?
-              </p>
-            </div>
-          </li>
-        </ul>
-
-        <!-- Espacio para imagen -->
-        <div class="modal-images">
-          <div class="modal-image">
-            <img src="./img/modal_3/efectiva_1.0.jpg" alt="Implementación de políticas" />
-            <div class="image-caption">
-              Implementación efectiva de políticas sociales
-            </div>
-          </div>
-          <div class="modal-image">
-            <img src="./img/modal_3/efectiva_1.1.jpg" alt="Implementación de políticas" />
-            <div class="image-caption">
-              Implementación efectiva de políticas sociales
-            </div>
-          </div>
-        </div>
-
-        <h3>Monitoreo y Evaluación (M&E)</h3>
-        <ul>
-          <li>
-            <h4>Uso de Indicadores de Derechos Humanos:</h4>
-            <p>
-              Implementar un sistema de M&E que utilice indicadores
-              estructurales (leyes y políticas), de proceso (ejecución de
-              acciones) y de resultados (impacto en la vida de las personas).
-            </p>
-            <div class="checklist">
-              <p>
-                <strong>Lista de verificación:</strong> ¿Se están midiendo los
-                resultados más allá de la simple ejecución, como la reducción
-                de la brecha salarial o el aumento en la calidad de la salud
-                percibida?
-              </p>
-            </div>
-          </li>
-          <li>
-            <h4>Análisis de Impacto Desagregado:</h4>
-            <p>
-              Monitorear el avance para el cumplimiento de los derechos
-              humanos, desagregando los datos por los factores de
-              vulnerabilidad.
-            </p>
-            <div class="checklist">
-              <p>
-                <strong>Lista de verificación:</strong> ¿Los datos del
-                monitoreo muestran si la intervención está reduciendo las
-                brechas entre los grupos más desfavorecidos y el promedio
-                nacional?
-              </p>
-            </div>
-          </li>
-          <li>
-            <h4>Mecanismos de Rendición de Cuentas:</h4>
-            <p>
-              Establecer procesos claros para que los ciudadanos y los grupos
-              vulnerables puedan presentar quejas o denuncias por fallas en el
-              acceso a los servicios o actos de discriminación.
-            </p>
-            <div class="checklist">
-              <p>
-                <strong>Lista de verificación:</strong> ¿Existe un mecanismo
-                de quejas accesible y confidencial, y se utiliza la
-                información para corregir el rumbo de la implementación?
-              </p>
-            </div>
-          </li>
-        </ul>
-
-        <!-- Espacio para imagen -->
-        <div class="modal-images">
-          <div class="modal-image">
-            <img src="./img/modal_3/sistemas_1.0.jpg" alt="Monitoreo y evaluación" />
-            <div class="image-caption">
-              Sistemas de monitoreo y evaluación
-            </div>
-          </div>
-          <div class="modal-image">
-            <img src="./img/modal_3/sistemas_1.1.jpg" alt="Monitoreo y evaluación" />
-            <div class="image-caption">
-              Sistemas de monitoreo y evaluación
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-actions">
-          <button class="btn btn-primary" id="back-to-main-bottom">
-            Volver al contenido principal
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Interseccionalidad -->
-  <div id="modal4" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Interseccionalidad</h2>
-      <div class="modal-body">
-        <h3>Cómo se cruzan género, raza, clase y cultura</h3>
-        <p>
-          La <strong>interseccionalidad</strong> explica cómo distintas formas
-          de desigualdad como el género, la raza, la clase o la cultura se
-          combinan y afectan simultáneamente a una persona. Este concepto fue
-          propuesto por <strong>Kimberlé Crenshaw (1989)</strong> para mostrar
-          que las mujeres afroamericanas sufrían discriminación tanto por su
-          género como por su raza.
-        </p>
-
-        <p>
-          En <strong>Guatemala y América Latina</strong>, la
-          interseccionalidad se refleja cuando una persona enfrenta exclusión
-          por varios factores a la vez: por ejemplo, ser mujer, indígena y de
-          bajos recursos. Su realidad no puede entenderse desde una sola
-          categoría, sino desde la unión de todas ellas.
-        </p>
-
-        <h3>Desafíos y oportunidades para la inclusión</h3>
-        <p>
-          Uno de los mayores <strong>desafíos</strong> es que muchas políticas
-          públicas se enfocan en una sola forma de desigualdad, dejando fuera
-          a quienes viven <strong>múltiples exclusiones</strong>. Por ejemplo,
-          una <strong>mujer indígena rural</strong> puede tener menos acceso a
-          la educación que una mujer urbana no indígena, debido a
-          <strong>barreras lingüísticas, culturales y económicas</strong>.
-        </p>
-
-        <p>
-          Sin embargo, la interseccionalidad también abre
-          <strong>oportunidades</strong> para crear políticas
-          <strong>más justas y efectivas</strong>, reconociendo la diversidad
-          de las personas. Hoy,
-          <strong>movimientos sociales, colectivos indígenas y feministas</strong>
-          incorporan este enfoque para promover una
-          <strong>igualdad más real e inclusiva</strong>.
-        </p>
-
-        <h3>Historias que muestran estas intersecciones</h3>
-        <ul>
-          <li>
-            <strong>Mujeres indígenas defensoras del territorio:</strong>
-            enfrentan triple discriminación por ser mujeres, indígenas y
-            activistas contra proyectos extractivos. Aun así, se organizan
-            para
-            <strong>defender sus derechos y liderar sus comunidades</strong>.
-          </li>
-          <li>
-            <strong>Jóvenes LGBTQ+ indígenas:</strong> además de luchar por el
-            reconocimiento de su identidad, enfrentan
-            <strong>rechazo dentro y fuera</strong> de sus comunidades.
-          </li>
-        </ul>
-
-        <p>
-          Estos ejemplos muestran que la <strong>inclusión</strong> no se
-          trata solo de género o raza, sino de entender cómo
-          <strong>todas las identidades se entrelazan</strong>.
-        </p>
-
-        <h3>Conclusión</h3>
-        <p>
-          La interseccionalidad nos invita a mirar la sociedad con más
-          empatía, entendiendo que
-          <strong>cada persona vive una combinación única de experiencias</strong>. Solo reconociendo esas diferencias
-          podremos construir una
-          <strong>sociedad verdaderamente equitativa</strong>.
-        </p>
-
-        <div class="modal-actions">
-          <button class="btn btn-primary"></button>
-          <button class="btn btn-ghost"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="modal5" class="modal">
+    <!-- MODAL 5 ACCIÓN -->
+    <div id="modal5" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>Acción y Participación Ciudadana</h2>
@@ -1080,14 +1004,868 @@
     </div>
   </div>
 
+<!-- EXPLORA TEMAS FUNDAMENTALES -->
+<section id="explorar-temas" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Explora Temas Fundamentales</h2>
+            <p class="lead">
+                Profundiza en conceptos clave que transforman nuestra comprensión de la diversidad, 
+                equidad e inclusión a través de guías prácticas y recursos accionables.
+            </p>
+        </div>
+
+        <div class="featured-topics">
+            <!-- Tema Destacado Principal -->
+            <article class="featured-topic" data-modal="modal-interseccionalidad">
+                <div class="topic-hero">
+                    <img src="./img/temas/hero-interseccionalidad.jpg" alt="Interseccionalidad - Múltiples identidades" />
+                    <div class="topic-overlay">
+                        <span class="topic-tag">Concepto Clave</span>
+                        <h3>Interseccionalidad: Entendiendo las identidades múltiples</h3>
+                        <p>Descubre cómo las diferentes dimensiones de identidad se intersectan creando experiencias únicas de privilegio y opresión</p>
+                        <button class="btn btn-primary">Explorar Concepto</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Grid de Temas Secundarios -->
+            <div class="topics-grid">
+                <article class="topic-card" data-modal="modal-equidad">
+                    <div class="topic-image">
+                        <img src="./img/temas/equidad-practica.jpg" alt="Equidad en acción" />
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="topic-content">
+                        <span class="topic-tag secondary">Guía Práctica</span>
+                        <h4>Implementando Equidad Social</h4>
+                        <p>5 estrategias concretas para promover la equidad en organizaciones y comunidades</p>
+                        <div class="topic-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i> 15 min lectura
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-download"></i> Checklist incluido
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="topic-card" data-modal="modal-multiculturalidad">
+                    <div class="topic-image">
+                        <img src="./img/temas/multiculturalidad.jpg" alt="Entornos multiculturales" />
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="topic-content">
+                        <span class="topic-tag secondary">Herramientas</span>
+                        <h4>Gestión de la Diversidad Cultural</h4>
+                        <p>Herramientas esenciales para crear espacios inclusivos que valoren la diversidad</p>
+                        <div class="topic-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i> 12 min lectura
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-tools"></i> Recursos prácticos
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="topic-card" data-modal="modal-inclusion-laboral">
+                    <div class="topic-image">
+                        <img src="./img/temas/inclusion-laboral.jpg" alt="Inclusión en el trabajo" />
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="topic-content">
+                        <span class="topic-tag secondary">Workplace</span>
+                        <h4>Inclusión en Entornos Laborales</h4>
+                        <p>Estrategias para construir culturas organizacionales verdaderamente inclusivas</p>
+                        <div class="topic-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i> 18 min lectura
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-chart-line"></i> Casos de éxito
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Modal de Interseccionalidad -->
+    <div id="modal-interseccionalidad" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Interseccionalidad: Comprender las Múltiples Identidades</h2>
+        <div class="modal-body">
+          <h3>¿Qué es la Interseccionalidad?</h3>
+          <p>La interseccionalidad es un marco teórico que nos ayuda a entender cómo diferentes formas de discriminación
+            (como racismo, sexismo, clasismo) se intersectan y crean experiencias únicas de opresión y privilegio.</p>
+
+          <div class="modal-images">
+            <div class="modal-image">
+              <img src="./img/blog/interseccionalidad.jpg" alt="Diagrama de interseccionalidad" />
+              <div class="image-caption">Las identidades múltiples se intersectan creando experiencias únicas</div>
+            </div>
+          </div>
+
+          <h3>Ejemplos Prácticos</h3>
+          <ul>
+            <li><strong>Mujer indígena migrante:</strong> Experimenta discriminación por género, etnia y condición
+              migratoria simultáneamente</li>
+            <li><strong>Persona con discapacidad LGBTQ+:</strong> Enfrenta barreras por discapacidad y orientación
+              sexual</li>
+            <li><strong>Hombre negro profesional:</strong> Vive el racismo incluso en espacios de alto nivel educativo
+            </li>
+          </ul>
+
+          <h3>¿Por qué es importante?</h3>
+          <div class="checklist">
+            <p><strong>Evita soluciones únicas:</strong> Las políticas que no consideran interseccionalidad pueden dejar
+              fuera a quienes más las necesitan</p>
+            <p><strong>Promueve inclusión real:</strong> Entender las múltiples identidades permite crear espacios
+              verdaderamente inclusivos</p>
+            <p><strong>Reconoce privilegios:</strong> Nos ayuda a identificar nuestros propios privilegios y cómo
+              afectan a otros</p>
+          </div>
+
+          <h3>Herramientas para aplicar la Interseccionalidad</h3>
+          <ul>
+            <li><strong>Análisis de datos desagregados:</strong> Recolectar información considerando múltiples
+              identidades</li>
+            <li><strong>Participación diversa:</strong> Incluir voces de personas con experiencias intersectadas en la
+              toma de decisiones</li>
+            <li><strong>Evaluación de impacto:</strong> Analizar cómo las políticas afectan a diferentes grupos de
+              manera distinta</li>
+          </ul>
+
+          <div class="modal-actions">
+            <button class="btn btn-primary">Descargar guía completa</button>
+            <button class="btn btn-ghost">Compartir este contenido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Equidad -->
+    <div id="modal-equidad" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Guía Práctica para Implementar Equidad</h2>
+        <div class="modal-body">
+          <h3>5 Pasos Concretos para Promover Equidad</h3>
+
+          <div class="steps">
+            <div class="step">
+              <h4>Paso 1: Diagnóstico Inicial</h4>
+              <p>Realiza un análisis de brechas y barreras existentes en tu organización o comunidad</p>
+              <div class="checklist">
+                <p><strong>Acción:</strong> Encuestas anónimas y grupos focales con diversos participantes</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h4>Paso 2: Establecer Metas Medibles</h4>
+              <p>Define objetivos específicos con indicadores claros de progreso</p>
+              <div class="checklist">
+                <p><strong>Ejemplo:</strong> "Aumentar en 30% la representación de grupos subrepresentados en liderazgo
+                  para 2025"</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h4>Paso 3: Capacitación Continua</h4>
+              <p>Implementa programas de formación en sesgos inconscientes y equidad</p>
+              <div class="checklist">
+                <p><strong>Recurso:</strong> Talleres mensuales con expertos en diversidad e inclusión</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h4>Paso 4: Políticas y Procesos Equitativos</h4>
+              <p>Revisa y ajusta procesos de reclutamiento, promoción y evaluación</p>
+              <div class="checklist">
+                <p><strong>Implementación:</strong> Comités de selección diversos y criterios de evaluación
+                  estandarizados</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h4>Paso 5: Monitoreo y Ajuste</h4>
+              <p>Evalúa periódicamente el progreso y ajusta estrategias según resultados</p>
+              <div class="checklist">
+                <p><strong>Métrica:</strong> Reportes trimestrales de diversidad y encuestas de clima organizacional</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-images">
+            <div class="modal-image">
+              <img src="./img/blog/equidad.jpg" alt="Proceso de implementación de equidad" />
+              <div class="image-caption">Proceso continuo para lograr equidad organizacional</div>
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <button class="btn btn-primary">Descargar checklist completo</button>
+            <button class="btn btn-ghost">Solicitar asesoría</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Multiculturalidad -->
+    <div id="modal-multiculturalidad" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Herramientas para Entornos Multiculturales</h2>
+        <div class="modal-body">
+          <h3>Estrategias para la Inclusión Cultural</h3>
+
+          <h4>Comunicación Intercultural Efectiva</h4>
+          <ul>
+            <li><strong>Lenguaje claro e inclusivo:</strong> Evita jergas y modismos locales</li>
+            <li><strong>Escucha activa:</strong> Presta atención a diferencias culturales en comunicación no verbal</li>
+            <li><strong>Validación cultural:</strong> Reconoce y respeta diferentes estilos de comunicación</li>
+          </ul>
+
+          <h4>Celebración de la Diversidad</h4>
+          <div class="checklist">
+            <p><strong>Eventos multiculturales:</strong> Organiza celebraciones que incluyan diversas tradiciones y
+              festividades</p>
+            <p><strong>Espacios de diálogo:</strong> Crea foros seguros para compartir experiencias culturales</p>
+            <p><strong>Representación visible:</strong> Incluye imágenes y símbolos de diversas culturas en espacios
+              físicos y digitales</p>
+          </div>
+
+          <h4>Políticas Inclusivas</h4>
+          <ul>
+            <li><strong>Flexibilidad religiosa:</strong> Permite ajustes por festividades y prácticas religiosas</li>
+            <li><strong>Alimentación inclusiva:</strong> Ofrece opciones que respeten restricciones dietéticas
+              culturales y religiosas</li>
+            <li><strong>Capacitación continua:</strong> Programa formaciones regulares sobre competencia cultural</li>
+          </ul>
+
+          <div class="modal-images">
+            <div class="modal-image">
+              <img src="./img/blog/herramientas.jpg" alt="Entorno multicultural inclusivo" />
+              <div class="image-caption">Espacios que celebran y valoran la diversidad cultural</div>
+            </div>
+          </div>
+
+          <h3>Kit de Herramientas Rápidas</h3>
+          <div class="tools-grid">
+            <div class="tool-card">
+              <h5>Guía de Saludos</h5>
+              <p>Aprende saludos básicos en diferentes idiomas</p>
+            </div>
+            <div class="tool-card">
+              <h5>Calendario Multicultural</h5>
+              <p>Fechas importantes de diversas culturas</p>
+            </div>
+            <div class="tool-card">
+              <h5>Checklist de Inclusión</h5>
+              <p>Verifica que tus espacios sean culturalmente inclusivos</p>
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <button class="btn btn-primary">Descargar kit de herramientas</button>
+            <button class="btn btn-ghost">Ver más recursos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-- Modal de Inclusión Laboral -->
+<div id="modal-inclusion-laboral" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Inclusión en Entornos Laborales</h2>
+        <div class="modal-body">
+            <h3>Construyendo Culturas Organizacionales Inclusivas</h3>
+            <p>La inclusión laboral va más allá de la diversidad numérica. Se trata de crear entornos donde todas las personas se sientan valoradas, respetadas y puedan contribuir plenamente.</p>
+
+            <div class="modal-images">
+                <div class="modal-image">
+                    <img src="./img/temas/inclusion-equipo.jpg" alt="Equipo diverso trabajando" />
+                    <div class="image-caption">Equipos diversos generan mayor innovación y creatividad</div>
+                </div>
+            </div>
+
+            <h3>Estrategias Clave para la Inclusión Laboral</h3>
+            
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Reclutamiento Inclusivo</h4>
+                    <ul>
+                        <li>Anuncios con lenguaje neutral</li>
+                        <li>Paneles de selección diversos</li>
+                        <li>Procesos de evaluación estandarizados</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Desarrollo Profesional</h4>
+                    <ul>
+                        <li>Programas de mentoría cruzada</li>
+                        <li>Planes de carrera equitativos</li>
+                        <li>Acceso igualitario a capacitación</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h4>Comunicación Inclusiva</h4>
+                    <ul>
+                        <li>Reuniones con participación equitativa</li>
+                        <li>Canales de feedback diversos</li>
+                        <li>Reconocimiento público inclusivo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Indicadores de Éxito</h3>
+            <div class="success-metrics">
+                <div class="metric">
+                    <h4>📊 Retención Diversa</h4>
+                    <p>Tasas similares de retención entre todos los grupos demográficos</p>
+                </div>
+                <div class="metric">
+                    <h4>🚀 Promoción Equitativa</h4>
+                    <p>Oportunidades iguales de ascenso para todos los empleados</p>
+                </div>
+                <div class="metric">
+                    <h4>💬 Engagement Inclusivo</h4>
+                    <p>Altos niveles de satisfacción en encuestas de clima laboral</p>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn btn-primary">Descargar Guía Completa</button>
+                <button class="btn btn-ghost">Plantilla de Evaluación</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- RESOURCES -->
+<section id="recursos" class="section">
+    <div class="container">
+        <h2>Recursos</h2>
+        <p class="lead">Herramientas y materiales para profundizar en temas de diversidad, equidad e inclusión</p>
+        <div class="resources">
+            <!-- Recurso 1: Descargas -->
+            <div class="resource-card" data-modal="modal-descargas">
+                <div class="resource-icon">
+                    <i class="fas fa-file-download"></i>
+                </div>
+                <h3>Guías y Documentos</h3>
+                <p>Descarga materiales prácticos, plantillas y guías en PDF y Word</p>
+                <button class="btn btn-primary">Ver Descargas</button>
+            </div>
+
+            <!-- Recurso 2: Enlaces y Videos -->
+            <div class="resource-card" data-modal="modal-enlaces">
+                <div class="resource-icon">
+                    <i class="fas fa-external-link-alt"></i>
+                </div>
+                <h3>Enlaces y Videos</h3>
+                <p>Accede a recursos externos, videos educativos y sitios recomendados</p>
+                <button class="btn btn-primary">Explorar Enlaces</button>
+            </div>
+
+            <!-- Recurso 3: Infografías -->
+            <div class="resource-card" data-modal="modal-infografias">
+                <div class="resource-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h3>Infografías</h3>
+                <p>Material visual para comprender conceptos clave de manera sencilla</p>
+                <button class="btn btn-primary">Ver Infografías</button>
+            </div>
+
+            <!-- Recurso 4: Glosario de Términos -->
+            <div class="resource-card" data-modal="modal-glosario">
+                <div class="resource-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Glosario de Términos</h3>
+                <p>Definiciones clave sobre diversidad, equidad e inclusión</p>
+                <button class="btn btn-primary">Consultar Glosario</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Descargas -->
+<div id="modal-descargas" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Guías y Documentos Descargables</h2>
+        <div class="modal-body">
+            <div class="downloads-grid">
+                <div class="download-item">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="download-info">
+                        <h4>Guía de Lenguaje Inclusivo</h4>
+                        <p>PDF - 2.4 MB</p>
+                        <p>Manual práctico para implementar lenguaje inclusivo en comunicaciones</p>
+                    </div>
+                    <a href="./files/documents/guia-lenguaje-inclusivo.pdf" download class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i> Descargar
+                    </a>
+                </div>
+
+                <div class="download-item">
+                    <div class="download-icon">
+                        <i class="fas fa-file-word"></i>
+                    </div>
+                    <div class="download-info">
+                        <h4>Plantilla de Política de Diversidad</h4>
+                        <p>DOCX - 1.8 MB</p>
+                        <p>Modelo editable para crear políticas de diversidad organizacional</p>
+                    </div>
+                    <a href="./files/documents/Proyecto Final - Blog.docx" download class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i> Descargar
+                    </a>
+                </div>
+
+                <div class="download-item">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="download-info">
+                        <h4>Checklist de Accesibilidad</h4>
+                        <p>PDF - 1.2 MB</p>
+                        <p>Lista de verificación para espacios físicos y digitales accesibles</p>
+                    </div>
+                    <a href="./files/documents/checklist-accesibilidad.pdf" download class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i> Descargar
+                    </a>
+                </div>
+
+                <div class="download-item">
+                    <div class="download-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="download-info">
+                        <h4>Plantilla de Indicadores DEI</h4>
+                        <p>XLSX - 3.1 MB</p>
+                        <p>Hoja de cálculo para medir métricas de Diversidad, Equidad e Inclusión</p>
+                    </div>
+                    <a href="./files/documents/plantilla-indicadores-dei.xlsx" download class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i> Descargar
+                    </a>
+                </div>
+
+                <div class="download-item">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="download-info">
+                        <h4>Manual de Interseccionalidad</h4>
+                        <p>PDF - 3.5 MB</p>
+                        <p>Guía completa sobre el enfoque interseccional en políticas públicas</p>
+                    </div>
+                    <a href="./files/documents/manual-interseccionalidad.pdf" download class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i> Descargar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Enlaces y Videos -->
+<div id="modal-enlaces" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Enlaces y Videos Recomendados</h2>
+        <div class="modal-body">
+            <h3>Videos Educativos</h3>
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="./img/resources/video1-thumb.jpg" alt="Video sobre interseccionalidad" />
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4>¿Qué es la Interseccionalidad?</h4>
+                    <p>Explicación sencilla del concepto con ejemplos prácticos</p>
+                    <a href="https://youtube.com/embed/ejemplo1" target="_blank" class="btn btn-ghost">
+                        <i class="fab fa-youtube"></i> Ver Video
+                    </a>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="./img/resources/video2-thumb.jpg" alt="Video sobre sesgos inconscientes" />
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4>Sesgos Inconscientes en el Trabajo</h4>
+                    <p>Cómo identificar y mitigar sesgos en entornos laborales</p>
+                    <a href="https://youtube.com/embed/ejemplo2" target="_blank" class="btn btn-ghost">
+                        <i class="fab fa-youtube"></i> Ver Video
+                    </a>
+                </div>
+            </div>
+
+            <h3>Sitios Web Recomendados</h3>
+            <div class="links-list">
+                <div class="link-item">
+                    <i class="fas fa-globe"></i>
+                    <div class="link-info">
+                        <h4>ONU Derechos Humanos</h4>
+                        <p>Recursos oficiales sobre derechos humanos y equidad</p>
+                        <a href="https://www.ohchr.org" target="_blank">Visitar sitio →</a>
+                    </div>
+                </div>
+
+                <div class="link-item">
+                    <i class="fas fa-university"></i>
+                    <div class="link-info">
+                        <h4>UNESCO Inclusión</h4>
+                        <p>Materiales educativos sobre inclusión y diversidad</p>
+                        <a href="https://es.unesco.org/themes/inclusion" target="_blank">Visitar sitio →</a>
+                    </div>
+                </div>
+
+                <div class="link-item">
+                    <i class="fas fa-hands-helping"></i>
+                    <div class="link-info">
+                        <h4>Amnistía Internacional</h4>
+                        <p>Informes y recursos sobre justicia social global</p>
+                        <a href="https://www.amnesty.org" target="_blank">Visitar sitio →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Infografías -->
+<div id="modal-infografias" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Infografías Educativas</h2>
+        <div class="modal-body">
+            <div class="infografias-grid">
+                <div class="infografia-item">
+                    <div class="infografia-image">
+                        <img src="./files/infografias/infografia-interseccionalidad.jpg" alt="Infografía Interseccionalidad" />
+                    </div>
+                    <div class="infografia-info">
+                        <h4>Interseccionalidad Visualizada</h4>
+                        <p>Representación gráfica de cómo se cruzan las diferentes identidades sociales</p>
+                        <a href="./files/infografias/infografia-interseccionalidad.jpg" download class="btn btn-ghost">
+                            <i class="fas fa-download"></i> Descargar Imagen
+                        </a>
+                    </div>
+                </div>
+
+                <div class="infografia-item">
+                    <div class="infografia-image">
+                        <img src="./files/infografias/infografia-equidad-vs-igualdad.png" alt="Infografía Equidad vs Igualdad" />
+                    </div>
+                    <div class="infografia-info">
+                        <h4>Equidad vs Igualdad</h4>
+                        <p>Diferencias clave entre estos dos conceptos fundamentales</p>
+                        <a href="./files/infografias/infografia-equidad-vs-igualdad.png" download class="btn btn-ghost">
+                            <i class="fas fa-download"></i> Descargar Imagen
+                        </a>
+                    </div>
+                </div>
+
+                <div class="infografia-item">
+                    <div class="infografia-image">
+                        <img src="./files/infografias/infografia-lenguaje-inclusivo.png" alt="Infografía Lenguaje Inclusivo" />
+                    </div>
+                    <div class="infografia-info">
+                        <h4>Lenguaje Inclusivo</h4>
+                        <p>Guía visual para implementar comunicación inclusiva</p>
+                        <a href="./files/infografias/infografia-lenguaje-inclusivo.png" download class="btn btn-ghost">
+                            <i class="fas fa-download"></i> Descargar Imagen
+                        </a>
+                    </div>
+                </div>
+
+                <div class="infografia-item">
+                    <div class="infografia-image">
+                        <img src="./files/infografias/infografia-sesgos-inconscientes.png" alt="Infografía Sesgos Inconscientes" />
+                    </div>
+                    <div class="infografia-info">
+                        <h4>Sesgos Inconscientes</h4>
+                        <p>Tipos comunes de sesgos y cómo identificarlos</p>
+                        <a href="./files/infografias/infografia-sesgos-inconscientes.png" download class="btn btn-ghost">
+                            <i class="fas fa-download"></i> Descargar Imagen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Glosario Ampliado -->
+<div id="modal-glosario" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Glosario de Términos</h2>
+        <div class="modal-body">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar término..." class="search-input" id="search-glosario">
+                <i class="fas fa-search"></i>
+            </div>
+            
+            <div class="glosario-grid" id="glosario-content">
+                <!-- Términos A -->
+                <div class="termino-card" data-term="accesibilidad">
+                    <h4>Accesibilidad</h4>
+                    <p>Diseño de productos, dispositivos, servicios o entornos para personas con discapacidad. La accesibilidad permite que todas las personas puedan participar en la sociedad en igualdad de condiciones.</p>
+                </div>
+
+                <div class="termino-card" data-term="acceso">
+                    <h4>Acceso</h4>
+                    <p>Posibilidad de utilizar los recursos y servicios disponibles en la sociedad. El acceso equitativo garantiza que todas las personas tengan las mismas oportunidades.</p>
+                </div>
+
+                <div class="termino-card" data-term="acción afirmativa">
+                    <h4>Acción Afirmativa</h4>
+                    <p>Políticas y prácticas diseñadas para favorecer a grupos históricamente discriminados, con el objetivo de corregir desigualdades estructurales.</p>
+                </div>
+
+                <!-- Términos B -->
+                <div class="termino-card" data-term="brecha salarial">
+                    <h4>Brecha Salarial</h4>
+                    <p>Diferencia en el salario promedio entre grupos, particularmente entre hombres y mujeres, que realiza el mismo trabajo o trabajo de igual valor.</p>
+                </div>
+
+                <!-- Términos C -->
+                <div class="termino-card" data-term="clasismo">
+                    <h4>Clasismo</h4>
+                    <p>Discriminación basada en la clase social o situación económica de las personas. Incluye prejuicios y tratos diferenciados según el nivel socioeconómico.</p>
+                </div>
+
+                <div class="termino-card" data-term="cultura inclusiva">
+                    <h4>Cultura Inclusiva</h4>
+                    <p>Entorno organizacional o social que valora, respeta y apoya las diferencias, donde todas las personas se sienten bienvenidas y pueden participar plenamente.</p>
+                </div>
+
+                <!-- Términos D -->
+                <div class="termino-card" data-term="derechos humanos">
+                    <h4>Derechos Humanos</h4>
+                    <p>Derechos inherentes a todos los seres humanos, sin distinción alguna de raza, sexo, nacionalidad, origen étnico, lengua, religión o cualquier otra condición.</p>
+                </div>
+
+                <div class="termino-card" data-term="discriminación">
+                    <h4>Discriminación</h4>
+                    <p>Trato diferenciado y perjudicial hacia una persona o grupo basado en características como raza, género, edad, discapacidad, orientación sexual, etc.</p>
+                </div>
+
+                <div class="termino-card" data-term="diversidad">
+                    <h4>Diversidad</h4>
+                    <p>Presencia de diferencias dentro de un espacio determinado, incluyendo raza, género, religión, orientación sexual, etnia, nacionalidad, idioma, discapacidad, edad, etc.</p>
+                </div>
+
+                <!-- Términos E -->
+                <div class="termino-card" data-term="equidad">
+                    <h4>Equidad</h4>
+                    <p>Principio de justicia que reconoce que cada persona tiene circunstancias diferentes y asigna los recursos necesarios para alcanzar resultados iguales.</p>
+                </div>
+
+                <div class="termino-card" data-term="etnia">
+                    <h4>Etnia</h4>
+                    <p>Grupo de personas que comparten una ascendencia, historia, cultura, idioma y tradiciones comunes, y que se identifican como un grupo distinto.</p>
+                </div>
+
+                <!-- Términos G -->
+                <div class="termino-card" data-term="género">
+                    <h4>Género</h4>
+                    <p>Construcción social de roles, comportamientos, actividades y atributos que una sociedad considera apropiados para hombres y mujeres.</p>
+                </div>
+
+                <!-- Términos I -->
+                <div class="termino-card" data-term="identidad de género">
+                    <h4>Identidad de Género</h4>
+                    <p>Experiencia interna e individual del género de cada persona, que puede corresponder o no con el sexo asignado al nacer.</p>
+                </div>
+
+                <div class="termino-card" data-term="inclusión">
+                    <h4>Inclusión</h4>
+                    <p>Práctica de asegurar que las personas se sientan valoradas y respetadas, y que tengan igual acceso a oportunidades y recursos.</p>
+                </div>
+
+                <div class="termino-card" data-term="interseccionalidad">
+                    <h4>Interseccionalidad</h4>
+                    <p>Marco que reconoce que las personas experimentan opresión de manera multidimensional según sus identidades sociales superpuestas.</p>
+                </div>
+
+                <!-- Términos J -->
+                <div class="termino-card" data-term="justicia social">
+                    <h4>Justicia Social</h4>
+                    <p>Concepto que defiende la igualdad de derechos y oportunidades para todos los miembros de la sociedad, promoviendo la distribución justa de recursos.</p>
+                </div>
+
+                <!-- Términos L -->
+                <div class="termino-card" data-term="lenguaje inclusivo">
+                    <h4>Lenguaje Inclusivo</h4>
+                    <p>Uso del lenguaje que evita sesgos hacia un sexo, género, raza, discapacidad u otra característica personal, promoviendo la igualdad.</p>
+                </div>
+
+                <!-- Términos M -->
+                <div class="termino-card" data-term="microagresión">
+                    <h4>Microagresión</h4>
+                    <p>Comentarios o acciones sutiles, a menudo inconscientes, que comunican mensajes despectivos hacia personas de grupos marginados.</p>
+                </div>
+
+                <!-- Términos P -->
+                <div class="termino-card" data-term="perspectiva de género">
+                    <h4>Perspectiva de Género</h4>
+                    <p>Enfoque analítico que considera las diferencias entre hombres y mujeres en el acceso a recursos, oportunidades y toma de decisiones.</p>
+                </div>
+
+                <!-- Términos S -->
+                <div class="termino-card" data-term="sesgo inconsciente">
+                    <h4>Sesgo Inconsciente</h4>
+                    <p>Actitudes o estereotipos que afectan nuestra comprensión, acciones y decisiones de manera inconsciente.</p>
+                </div>
+
+                <!-- Términos U -->
+                <div class="termino-card" data-term="universalismo proporcional">
+                    <h4>Universalismo Proporcional</h4>
+                    <p>Enfoque que proporciona servicios universales pero con mayor intensidad de apoyo para quienes más lo necesitan.</p>
+                </div>
+
+                <div class="termino-card" data-term="violencia estructural">
+                    <h4>Violencia Estructural</h4>
+                    <p>Forma de violencia en la que alguna estructura social o institución daña a las personas al impedir que satisfagan sus necesidades básicas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="section">
+      <div class="container" id="contacto-container">
+        <h2>¿Tienes dudas o quieres colaborar?</h2>
+        <p class="lead">
+          Si te gustaría hacer un aporte, sugerir un nuevo apartado o
+          simplemente quieres charlar sobre el proyecto, ¡envíanos un
+          WhatsApp!
+        </p>
+
+        <a href="https://api.whatsapp.com/send?phone=50256181575&text=%C2%A1Hola%20👋!%20Me%20gustar%C3%ADa%20hacer%20un%20aporte%20o%20sugerir%20agregar%20un%20apartado%20al%20sitio%20💡."
+          class="btn btn-primary cta-whatsapp" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ABOUT -->
+  <div id="modal-sobre-nosotros" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Sobre Nosotros</h2>
+      <div class="modal-body">
+        <p class="team-description">
+          Somos un equipo multidisciplinario comprometido con la promoción de la diversidad,
+          equidad e inclusión a través de la educación y la acción concreta.
+        </p>
+
+        <div class="team-grid">
+          <!-- Integrante 1 -->
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="./img/team/miembro1.jpg" alt="Nombre Integrante 1" />
+            </div>
+            <div class="member-info">
+              <h3>Hefer Cotuc</h3>
+              <p class="member-career">Licenciatura en Tecnología de Sistemas Informáticos</p>
+              <p class="member-bio">
+                Descripción breve sobre el integrante, sus intereses y contribuciones al proyecto.
+              </p>
+            </div>
+          </div>
+
+          <!-- Integrante 2 -->
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="./img/team/miembro2.jpg" alt="Nombre Integrante 2" />
+            </div>
+            <div class="member-info">
+              <h3>Nombre Integrante 2</h3>
+              <p class="member-career">Licenciatura en Tecnología de Sistemas Informáticos</p>
+              <p class="member-bio">
+                Descripción breve sobre el integrante, sus intereses y contribuciones al proyecto.
+              </p>
+            </div>
+          </div>
+
+          <!-- Integrante 3 -->
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="./img/team/miembro3.jpg" alt="Nombre Integrante 3" />
+            </div>
+            <div class="member-info">
+              <h3>Nombre Integrante 3</h3>
+              <p class="member-career">Licenciatura en Tecnología de Sistemas Informáticos</p>
+              <p class="member-bio">
+                Descripción breve sobre el integrante, sus intereses y contribuciones al proyecto.
+              </p>
+            </div>
+          </div>
+
+          <!-- Integrante 4 -->
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="./img/team/miembro4.jpg" alt="Nombre Integrante 4" />
+            </div>
+            <div class="member-info">
+              <h3>Nombre Integrante 4</h3>
+              <p class="member-career">Licenciatura en Tecnología de Sistemas Informáticos</p>
+              <p class="member-bio">
+                Descripción breve sobre el integrante, sus intereses y contribuciones al proyecto.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-mission">
+          <h3>Nuestra Misión</h3>
+          <p>
+            Creemos en la construcción de sociedades más justas e inclusivas a través de la educación,
+            la sensibilización y la implementación de prácticas equitativas en todos los ámbitos sociales.
+          </p>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn btn-primary">Contactar al equipo</button>
+          <button class="btn btn-ghost">Ver nuestro trabajo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container" style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 16px;
-          flex-wrap: wrap;
-        ">
+    <div class="container"
+      style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
       <small>© 2025 Inclusión & Equidad. Todos los derechos reservados.</small>
       <small>Hecho con empatía, datos y buenas prácticas.</small>
     </div>
