@@ -198,3 +198,58 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// --- FUNCIONALIDAD PARA MODALES DE ACCIÓN CIUDADANA ---
+document.addEventListener('DOMContentLoaded', function() {
+    const btnInvolucrarse = document.getElementById('btn-involucrarse');
+    const modalAccion = document.getElementById('modal5');
+    const modalGuia = document.getElementById('modal-guia-involucrarse');
+    
+    // Abrir modal de guía desde modal de acción
+    if (btnInvolucrarse) {
+        btnInvolucrarse.addEventListener('click', function() {
+            if (modalAccion) {
+                modalAccion.style.display = 'none';
+            }
+            if (modalGuia) {
+                modalGuia.style.display = 'block';
+            }
+        });
+    }
+    
+    // Volver al modal de acción desde botón superior
+    const backToAccion = document.getElementById('back-to-accion');
+    if (backToAccion) {
+        backToAccion.addEventListener('click', function() {
+            if (modalGuia) {
+                modalGuia.style.display = 'none';
+            }
+            if (modalAccion) {
+                modalAccion.style.display = 'block';
+            }
+        });
+    }
+    
+    // Volver al modal de acción desde botón inferior
+    const backToAccionBottom = document.getElementById('back-to-accion-bottom');
+    if (backToAccionBottom) {
+        backToAccionBottom.addEventListener('click', function() {
+            if (modalGuia) {
+                modalGuia.style.display = 'none';
+            }
+            if (modalAccion) {
+                modalAccion.style.display = 'block';
+            }
+        });
+    }
+    
+    // Cerrar modal de guía con X específica
+    const closeGuia = document.querySelector('.close-guia');
+    if (closeGuia) {
+        closeGuia.addEventListener('click', function() {
+            if (modalGuia) {
+                modalGuia.style.display = 'none';
+            }
+        });
+    }
+});
