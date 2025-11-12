@@ -253,3 +253,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// --- FUNCIONALIDAD PARA MODAL SOBRE NOSOTROS ---
+document.addEventListener('DOMContentLoaded', function() {
+    const btnCloseAbout = document.getElementById('btn-close-about');
+    const modalAbout = document.getElementById('modal-sobre-nosotros');
+    
+    if (btnCloseAbout && modalAbout) {
+        btnCloseAbout.addEventListener('click', function() {
+            modalAbout.style.display = 'none';
+        });
+    }
+});
