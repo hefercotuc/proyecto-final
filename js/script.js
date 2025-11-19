@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   
   // --- 1. LÓGICA DEL TOGGLE DE TEMA (MODO CLARO/OSCURO) ---
+  /*
   const themeToggle = document.getElementById('toggle');
   const body = document.body;
 
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       localStorage.setItem('theme', 'dark');
     }
-  });
+  });*/
 
 
   // --- 2. LÓGICA DE VENTANAS MODALES ---
